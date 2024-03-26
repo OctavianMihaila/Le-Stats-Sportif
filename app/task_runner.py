@@ -1,6 +1,7 @@
 from queue import Queue
 from threading import Thread, Event
 import time
+import os
 
 class ThreadPool:
     def __init__(self):
@@ -12,7 +13,17 @@ class ThreadPool:
         # You must NOT:
         #   * create more threads than the hardware concurrency allows
         #   * recreate threads for each task
-        pass
+
+        if 'TP_NUM_OF_THREADS' in os.environ:
+            self.num_threads = int(os.environ['TP_NUM_OF_THREADS'])
+        else:
+            self.num_threads = os.cpu_count()
+
+        # Jobs that are waiting to be executed or are currently being executed
+        self.waiting_jobs = Queue()
+        
+        # Jobs that are finished
+        self.job_results = {}
 
 class TaskRunner(Thread):
     def __init__(self):

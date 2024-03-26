@@ -1,6 +1,7 @@
+import logging
 from app import webserver
 from flask import request, jsonify
-
+from app.job import Job
 import os
 import json
 
@@ -27,110 +28,151 @@ def get_response(job_id):
     print(f"JobID is {job_id}")
     # TODO
     # Check if job_id is valid
+    if job_id > webserver.job_counter or job_id < 1:
+        logging.error(f"Invalid job_id {job_id}")
+        return jsonify({"status": "error", "reason": "Invalid job_id"})
 
-    # Check if job_id is done and return the result
-    #    res = res_for(job_id)
-    #    return jsonify({
-    #        'status': 'done',
-    #        'data': res
-    #    })
+    # check if the job_id is still running
+    if job_id in webserver.tasks_runner.waiting_jobs:
+        logging.info(f"Job {job_id} is still running")
+        return jsonify({'status': 'running'})
+    
+    if job_id in webserver.tasks_runner.job_results:
+        logging.info(f"Job {job_id} is done")
+        return jsonify({'status': 'done', 'data': webserver.tasks_runner.job_results[job_id]})
+    
+    logging.error(f"Job {job_id} is not in the queue or results")
 
-    # If not, return running status
-    return jsonify({'status': 'NotImplemented'})
+    return jsonify({"status": "error", "reason": "Job has valid job_id but is not in the queue or results."})
+
 
 @webserver.route('/api/states_mean', methods=['POST'])
 def states_mean_request():
     # Get request data
     data = request.json
-    print(f"Got request {data}")
-
     # TODO
     # Register job. Don't wait for task to finish
+    new_job = Job(webserver.job_counter, "states_mean", data)
+    webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
-    # Return associated job_id
+    webserver.job_counter += 1
 
-    return jsonify({"status": "NotImplemented"})
+    logging.info(f"Job {new_job.job_id} was added to the queue")    
+    
+    # Return associated job_id
+    return jsonify({"job_id": new_job.job_id})
 
 @webserver.route('/api/state_mean', methods=['POST'])
 def state_mean_request():
     # TODO
     # Get request data
+    data = request.json
     # Register job. Don't wait for task to finish
+    new_job = Job(webserver.job_counter, "state_mean", data)
+    webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
-    # Return associated job_id
+    webserver.job_counter += 1
 
-    return jsonify({"status": "NotImplemented"})
+    logging.info(f"Job {new_job.job_id} was added to the queue")
+    # Return associated job_id
+    return jsonify({"job_id": new_job.job_id})
 
 
 @webserver.route('/api/best5', methods=['POST'])
 def best5_request():
     # TODO
     # Get request data
+    data = request.json
     # Register job. Don't wait for task to finish
+    new_job = Job(webserver.job_counter, "best5", data)
+    webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
+    webserver.job_counter += 1
     # Return associated job_id
-
-    return jsonify({"status": "NotImplemented"})
+    return jsonify({"job_id": new_job.job_id})
 
 @webserver.route('/api/worst5', methods=['POST'])
 def worst5_request():
     # TODO
     # Get request data
+    data = request.json
     # Register job. Don't wait for task to finish
+    new_job = Job(webserver.job_counter, "worst5", data)
+    webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
+    webserver.job_counter += 1
     # Return associated job_id
 
-    return jsonify({"status": "NotImplemented"})
+    return jsonify({"job_id": new_job.job_id})
 
 @webserver.route('/api/global_mean', methods=['POST'])
 def global_mean_request():
     # TODO
     # Get request data
+    data = request.json
     # Register job. Don't wait for task to finish
+    new_job = Job(webserver.job_counter, "global_mean", data)
+    webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
+    webserver.job_counter += 1
     # Return associated job_id
 
-    return jsonify({"status": "NotImplemented"})
+    return jsonify({"job_id": new_job.job_id})
 
 @webserver.route('/api/diff_from_mean', methods=['POST'])
 def diff_from_mean_request():
     # TODO
     # Get request data
+    data = request.json
     # Register job. Don't wait for task to finish
+    new_job = Job(webserver.job_counter, "diff_from_mean", data)
+    webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
+    webserver.job_counter += 1
     # Return associated job_id
-
-    return jsonify({"status": "NotImplemented"})
+    
+    return jsonify({"job_id": new_job.job_id})
 
 @webserver.route('/api/state_diff_from_mean', methods=['POST'])
 def state_diff_from_mean_request():
     # TODO
     # Get request data
+    data = request.json
     # Register job. Don't wait for task to finish
+    new_job = Job(webserver.job_counter, "state_diff_from_mean", data)
+    webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
+    webserver.job_counter += 1
     # Return associated job_id
 
-    return jsonify({"status": "NotImplemented"})
+    return jsonify({"job_id": new_job.job_id})
 
 @webserver.route('/api/mean_by_category', methods=['POST'])
 def mean_by_category_request():
     # TODO
     # Get request data
+    data = request.json
     # Register job. Don't wait for task to finish
+    new_job = Job(webserver.job_counter, "mean_by_category", data)
     # Increment job_id counter
+    webserver.job_counter += 1
     # Return associated job_id
 
-    return jsonify({"status": "NotImplemented"})
+    return jsonify({"job_id": new_job.job_id})
 
 @webserver.route('/api/state_mean_by_category', methods=['POST'])
 def state_mean_by_category_request():
     # TODO
     # Get request data
+    data = request.json
     # Register job. Don't wait for task to finish
+    new_job = Job(webserver.job_counter, "state_mean_by_category", data)
+    webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
+    webserver.job_counter += 1
     # Return associated job_id
 
-    return jsonify({"status": "NotImplemented"})
+    return jsonify({"job_id": new_job.job_id})
 
 # You can check localhost in your browser to see what this displays
 @webserver.route('/')
