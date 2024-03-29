@@ -24,6 +24,9 @@ class DataIngestor:
             'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week',
         ]
 
+    def get_data(self):
+        return self.data
+
 #     # def a function that prints the frist 3 rows of the data
 #     def print_first_3_rows(self):
 #         print(self.data[:3])
