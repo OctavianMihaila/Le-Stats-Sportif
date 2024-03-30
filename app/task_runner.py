@@ -26,35 +26,29 @@ class ThreadPool:
         self.job_results = {}
 
         self.shutdown_event = Event()
+
+        threads = []
+
+        for _ in range(self.num_threads):
+            thread = TaskRunner(self)
+            threads.append(thread)
+            thread.start()
     
     def get_waiting_jobs(self):
         return self.waiting_jobs
 
     def get_first_waiting_job(self):
         return self.waiting_jobs.get()
-    
-    def get_job_results(self):
-        return self.job_results
-    
-    def graceful_shutdown(self):
-        self.graceful_shutdown = True
-
-    # def check_job_in_waiting_queue(self, job_id):
-    #     queue_copy = self.waiting_jobs.queue
-    #     for job in queue_copy:
-    #         if job.job_id == job_id:
-    #             return True
-            
-    #     return False
 
 class TaskRunner(Thread):
-    def __init__(self):
-        pass
+    def __init__(self, thread_pool):
+        Thread.__init__(self)
+        self.thread_pool = thread_pool
 
     def run(self):
-        while not self.shutdown_event.is_set():
+        while not self.thread_pool.shutdown_event.is_set():
             # TODO
             # Get pending job
-            job = ThreadPool.get_first_waiting_job()
+            job = self.thread_pool.get_first_waiting_job()
             # Execute the job and save the result to disk
             job.execute()

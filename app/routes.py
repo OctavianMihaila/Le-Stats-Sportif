@@ -1,6 +1,6 @@
 import logging
 from flask import request, jsonify
-from app.job import Job
+from app.job import Job, states_mean, state_mean, best5, worst5, global_mean, diff_from_mean, state_diff_from_mean, mean_by_category, state_mean_by_category
 from app import webserver
 import os
 import json
@@ -25,7 +25,6 @@ def post_endpoint():
 
 @webserver.route('/api/get_results/<job_id>', methods=['GET'])
 def get_response(job_id):
-    print(f"JobID is {job_id}")
     # TODO
     # Check if job_id is valid
     if int(job_id) > int(webserver.job_counter) or int(job_id) < 1:
@@ -35,11 +34,11 @@ def get_response(job_id):
     # check if the job_id is in waiting queue
     is_in_waiting_queue = False
     waiting_queue = webserver.tasks_runner.get_waiting_jobs()
-    for job in iter(waiting_queue.get, None):
-        if job.job_id == job_id:
+    for job in waiting_queue.queue:
+        if job.job_id == int(job_id):
             is_in_waiting_queue = True
             break
-
+    
     # check if the job_id is still running
     if is_in_waiting_queue:
         logging.info(f"Job {job_id} is still running")
@@ -48,7 +47,6 @@ def get_response(job_id):
     # look in results dir to see if the job_id is there. if yes, return the results
     if os.path.exists(f"results/{job_id}"):
         with open(f"results/{job_id}", "r") as f:
-            print('file found for job_id' + job_id)
             results = f.read()
             logging.info(f"Job {job_id} is done and results are {results}")
             return jsonify({"status": "done", "data": results})
@@ -84,7 +82,7 @@ def states_mean_request():
     data = request.json
     # TODO
     # Register job. Don't wait for task to finish
-    new_job = Job(webserver.job_counter, "states_mean", data)
+    new_job = Job(webserver.job_counter, states_mean, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
     webserver.job_counter += 1
@@ -100,7 +98,7 @@ def state_mean_request():
     # Get request data
     data = request.json
     # Register job. Don't wait for task to finish
-    new_job = Job(webserver.job_counter, "state_mean", data)
+    new_job = Job(webserver.job_counter, state_mean, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
     webserver.job_counter += 1
@@ -116,7 +114,7 @@ def best5_request():
     # Get request data
     data = request.json
     # Register job. Don't wait for task to finish
-    new_job = Job(webserver.job_counter, "best5", data)
+    new_job = Job(webserver.job_counter, best5, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
     webserver.job_counter += 1
@@ -129,7 +127,7 @@ def worst5_request():
     # Get request data
     data = request.json
     # Register job. Don't wait for task to finish
-    new_job = Job(webserver.job_counter, "worst5", data)
+    new_job = Job(webserver.job_counter, worst5, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
     webserver.job_counter += 1
@@ -143,7 +141,7 @@ def global_mean_request():
     # Get request data
     data = request.json
     # Register job. Don't wait for task to finish
-    new_job = Job(webserver.job_counter, "global_mean", data)
+    new_job = Job(webserver.job_counter, global_mean, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
     webserver.job_counter += 1
@@ -157,7 +155,7 @@ def diff_from_mean_request():
     # Get request data
     data = request.json
     # Register job. Don't wait for task to finish
-    new_job = Job(webserver.job_counter, "diff_from_mean", data)
+    new_job = Job(webserver.job_counter, diff_from_mean, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
     webserver.job_counter += 1
@@ -171,7 +169,7 @@ def state_diff_from_mean_request():
     # Get request data
     data = request.json
     # Register job. Don't wait for task to finish
-    new_job = Job(webserver.job_counter, "state_diff_from_mean", data)
+    new_job = Job(webserver.job_counter, state_diff_from_mean, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
     webserver.job_counter += 1
@@ -185,7 +183,7 @@ def mean_by_category_request():
     # Get request data
     data = request.json
     # Register job. Don't wait for task to finish
-    new_job = Job(webserver.job_counter, "mean_by_category", data)
+    new_job = Job(webserver.job_counter, mean_by_category, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
     webserver.job_counter += 1
@@ -199,7 +197,7 @@ def state_mean_by_category_request():
     # Get request data
     data = request.json
     # Register job. Don't wait for task to finish
-    new_job = Job(webserver.job_counter, "state_mean_by_category", data)
+    new_job = Job(webserver.job_counter, state_mean_by_category, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
     # Increment job_id counter
     webserver.job_counter += 1

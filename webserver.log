@@ -1,4 +1,296 @@
+INFO:root:Job 30 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 30 is done and results are 52.446666666666665
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "GET /api/get_results/30 HTTP/1.1" 200 -
+INFO:root:Job 31 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 31 is done and results are 19.91785714285714
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "GET /api/get_results/31 HTTP/1.1" 200 -
+INFO:root:Job 32 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 32 is done and results are 35.08593750000001
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "GET /api/get_results/32 HTTP/1.1" 200 -
+INFO:root:Job 33 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 33 is done and results are 44.98666666666667
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "GET /api/get_results/33 HTTP/1.1" 200 -
+INFO:root:Job 34 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 34 is done and results are 34.6203125
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "GET /api/get_results/34 HTTP/1.1" 200 -
+INFO:root:Job 35 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 35 is done and results are 14.858823529411765
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "GET /api/get_results/35 HTTP/1.1" 200 -
+INFO:root:Job 36 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "POST /api/state_mean HTTP/1.1" 200 -
+ERROR:root:Job 36 is not in the queue or results
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "GET /api/get_results/36 HTTP/1.1" 200 -
+INFO:root:Job 36 is done and results are 21.602941176470583
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "GET /api/get_results/36 HTTP/1.1" 200 -
+INFO:root:Job 37 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:12] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 37 is done and results are 20.4
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/37 HTTP/1.1" 200 -
+INFO:root:Job 38 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 38 is done and results are 48.53214285714285
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/38 HTTP/1.1" 200 -
+INFO:root:Job 39 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 39 is done and results are 26.757142857142856
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/39 HTTP/1.1" 200 -
+INFO:root:Job 40 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 40 is done and results are 17.65333333333334
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/40 HTTP/1.1" 200 -
+INFO:root:Job 41 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 41 is done and results are 20.14117647058824
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/41 HTTP/1.1" 200 -
+INFO:root:Job 42 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 42 is done and results are 22.104545454545452
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/42 HTTP/1.1" 200 -
+INFO:root:Job 43 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 43 is done and results are 50.9969696969697
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/43 HTTP/1.1" 200 -
+INFO:root:Job 44 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+ERROR:root:Job 44 is not in the queue or results
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/44 HTTP/1.1" 200 -
+INFO:root:Job 44 is done and results are 52.446666666666665
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/44 HTTP/1.1" 200 -
+INFO:root:Job 45 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 45 is done and results are 50.9969696969697
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/45 HTTP/1.1" 200 -
+INFO:root:Job 46 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 46 is done and results are 34.31612903225807
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/46 HTTP/1.1" 200 -
+INFO:root:Job 47 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 47 is done and results are 44.98666666666667
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/47 HTTP/1.1" 200 -
+INFO:root:Job 48 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 48 is done and results are 34.485454545454544
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/48 HTTP/1.1" 200 -
+INFO:root:Job 49 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 49 is done and results are 48.53214285714285
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/49 HTTP/1.1" 200 -
+INFO:root:Job 50 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/states_mean HTTP/1.1" 200 -
+INFO:root:Job 50 is done and results are {"Colorado": 23.071428571428566, "New Jersey": 25.45178571428571, "District of Columbia": 25.541428571428575, "Massachusetts": 26.198684210526313, "California": 26.81451612903225, "Hawaii": 27.034722222222225, "New York": 27.598507462686563, "Florida": 27.601098901098904, "Utah": 27.727397260273968, "Rhode Island": 28.025000000000002, "Montana": 28.387142857142862, "Connecticut": 28.431250000000006, "Vermont": 28.545901639344265, "Nevada": 28.890909090909087, "Wyoming": 29.255932203389825, "Oregon": 29.452542372881368, "New Hampshire": 29.764864864864865, "Minnesota": 29.832835820895525, "Alaska": 29.86615384615385, "Illinois": 30.129310344827587, "Washington": 30.152112676056326, "Maryland": 30.37333333333334, "Maine": 30.631034482758622, "Arizona": 30.683582089552235, "National": 30.700000000000003, "Pennsylvania": 30.706349206349206, "Virginia": 30.772972972972976, "New Mexico": 30.956756756756754, "Idaho": 31.049230769230775, "Nebraska": 31.12307692307692, "Delaware": 31.129850746268655, "Puerto Rico": 31.341538461538462, "Texas": 31.429310344827584, "Georgia": 31.46825396825397, "Guam": 31.86363636363637, "North Carolina": 32.2032786885246, "Virgin Islands": 32.75151515151515, "North Dakota": 33.26153846153846, "South Dakota": 33.31733333333334, "Wisconsin": 33.34262295081967, "Iowa": 33.472727272727276, "Missouri": 33.67313432835821, "Ohio": 33.699999999999996, "Kansas": 33.815, "South Carolina": 34.126865671641795, "Indiana": 34.25185185185185, "Kentucky": 34.306153846153855, "Michigan": 34.37450980392157, "Tennessee": 34.51363636363636, "Oklahoma": 34.97833333333334, "Alabama": 35.122666666666674, "Arkansas": 35.42567567567568, "Louisiana": 36.26619718309859, "Mississippi": 36.50694444444445, "West Virginia": 36.80000000000001}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/50 HTTP/1.1" 200 -
+INFO:root:Job 51 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/states_mean HTTP/1.1" 200 -
+INFO:root:Job 51 is done and results are {"District of Columbia": 30.746875, "Missouri": 32.76268656716418, "Arkansas": 32.99516129032258, "Kentucky": 33.071641791044776, "Vermont": 33.11818181818182, "Louisiana": 33.1793103448276, "Ohio": 33.25753424657533, "South Carolina": 33.25909090909091, "Virgin Islands": 33.296875, "Illinois": 33.521874999999994, "Indiana": 33.58701298701301, "Michigan": 33.73734939759038, "West Virginia": 33.8611111111111, "Iowa": 33.96455696202532, "Washington": 33.96842105263158, "Hawaii": 34.00468750000001, "Kansas": 34.05625, "Oklahoma": 34.05833333333334, "Tennessee": 34.10945945945945, "Oregon": 34.1421875, "Alabama": 34.1551724137931, "Wisconsin": 34.15542168674699, "Utah": 34.195081967213106, "Florida": 34.27333333333333, "Georgia": 34.30126582278482, "Mississippi": 34.315625, "Maine": 34.31612903225807, "Texas": 34.37692307692308, "North Carolina": 34.377631578947366, "Virginia": 34.458823529411774, "Guam": 34.485454545454544, "Maryland": 34.528395061728396, "Pennsylvania": 34.54354838709677, "Massachusetts": 34.6203125, "Delaware": 34.673846153846156, "Colorado": 34.78536585365854, "New Hampshire": 34.84415584415584, "New York": 34.86, "North Dakota": 34.89166666666666, "National": 35.08593750000001, "Rhode Island": 35.17878787878787, "Idaho": 35.19090909090909, "South Dakota": 35.19565217391305, "Arizona": 35.404687500000016, "Wyoming": 35.5169014084507, "Minnesota": 35.54576271186441, "Nebraska": 35.69142857142857, "California": 35.72459016393442, "Connecticut": 35.75428571428572, "New Mexico": 35.86349206349206, "Alaska": 35.902777777777786, "New Jersey": 36.08059701492537, "Montana": 36.17826086956522, "Nevada": 36.358333333333334, "Puerto Rico": 36.98636363636363}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/51 HTTP/1.1" 200 -
+INFO:root:Job 52 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/states_mean HTTP/1.1" 200 -
+ERROR:root:Job 52 is not in the queue or results
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/52 HTTP/1.1" 200 -
+INFO:root:Job 52 is done and results are {"Puerto Rico": 9.90909090909091, "Mississippi": 15.505714285714287, "West Virginia": 15.733333333333333, "Tennessee": 15.735483870967744, "Kentucky": 15.831578947368419, "Louisiana": 16.542857142857144, "Oklahoma": 16.568571428571428, "Alabama": 16.742424242424242, "Indiana": 17.307142857142857, "Kansas": 17.663636363636368, "North Dakota": 17.856666666666666, "Arkansas": 18.031034482758617, "Iowa": 18.162962962962954, "Missouri": 18.509999999999998, "Ohio": 18.909677419354843, "Texas": 18.911538461538463, "South Dakota": 19.184615384615384, "National": 19.91785714285714, "New York": 19.93548387096774, "North Carolina": 19.938461538461542, "South Carolina": 19.939393939393938, "Pennsylvania": 20.04615384615385, "Maine": 20.14117647058824, "Nebraska": 20.29047619047619, "Maryland": 20.307407407407407, "Delaware": 20.37272727272727, "New Jersey": 20.70333333333333, "Nevada": 20.793548387096774, "Virginia": 20.851612903225806, "District of Columbia": 20.907692307692304, "Michigan": 20.961764705882356, "Connecticut": 20.996000000000002, "Idaho": 21.16875, "Georgia": 21.18181818181818, "Minnesota": 21.228, "New Hampshire": 21.434482758620685, "Rhode Island": 21.559090909090912, "Massachusetts": 21.602941176470583, "Illinois": 21.68076923076923, "Vermont": 21.804166666666664, "Florida": 22.025000000000002, "Washington": 22.084615384615386, "Guam": 22.104545454545452, "Wisconsin": 22.30740740740741, "Utah": 22.38076923076923, "Oregon": 22.549999999999997, "New Mexico": 22.807142857142857, "Arizona": 23.145454545454545, "Wyoming": 23.276923076923076, "Hawaii": 23.410526315789472, "California": 23.63870967741936, "Montana": 23.71212121212121, "Alaska": 24.719047619047615, "Colorado": 25.276923076923076}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/52 HTTP/1.1" 200 -
+INFO:root:Job 53 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/states_mean HTTP/1.1" 200 -
+INFO:root:Job 53 is done and results are {"Maine": 14.858823529411765, "Vermont": 16.045454545454543, "New Hampshire": 16.938888888888883, "Massachusetts": 17.65333333333334, "Georgia": 17.66470588235294, "South Dakota": 17.98888888888889, "Montana": 18.417391304347824, "District of Columbia": 18.43076923076923, "Oregon": 18.466666666666665, "Florida": 18.6, "Michigan": 19.450000000000003, "Wyoming": 19.623076923076926, "Idaho": 19.72666666666667, "North Carolina": 19.83888888888889, "South Carolina": 19.900000000000002, "West Virginia": 20.053333333333335, "New York": 20.224999999999998, "Washington": 20.236363636363635, "Kentucky": 20.349999999999998, "National": 20.4, "Missouri": 20.424999999999997, "Tennessee": 20.425, "Kansas": 20.442857142857143, "California": 20.62777777777778, "Colorado": 20.707692307692305, "Virginia": 21.04666666666667, "New Jersey": 21.05454545454546, "Maryland": 21.152941176470588, "Alaska": 21.206666666666663, "Nebraska": 21.330434782608695, "Texas": 21.37142857142857, "Ohio": 21.46470588235294, "Pennsylvania": 21.466666666666665, "Minnesota": 21.540000000000003, "Oklahoma": 21.54583333333333, "Utah": 21.876923076923074, "Alabama": 21.95, "Hawaii": 21.95, "Delaware": 22.129411764705882, "Illinois": 22.17, "Rhode Island": 22.39333333333333, "Arkansas": 22.523076923076925, "North Dakota": 22.540909090909086, "Arizona": 22.711111111111112, "Connecticut": 22.823076923076922, "Iowa": 22.950000000000006, "Mississippi": 22.983333333333334, "Wisconsin": 23.185714285714287, "Indiana": 23.919230769230772, "Nevada": 24.099999999999994, "Louisiana": 24.506249999999998, "New Mexico": 24.53571428571428, "Guam": 26.757142857142856, "Virgin Islands": 27.26428571428571, "Puerto Rico": 39.89}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/53 HTTP/1.1" 200 -
+INFO:root:Job 54 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/states_mean HTTP/1.1" 200 -
+INFO:root:Job 54 is done and results are {"Colorado": 19.366666666666667, "Oregon": 20.95616438356164, "California": 21.071014492753626, "Washington": 21.251388888888883, "Utah": 21.285937499999996, "District of Columbia": 21.598214285714285, "Alaska": 21.801562500000006, "Vermont": 21.813235294117636, "Hawaii": 21.83692307692308, "Montana": 22.332876712328765, "New Hampshire": 22.409333333333333, "Minnesota": 22.737878787878795, "Wisconsin": 22.913513513513514, "Idaho": 22.980952380952385, "South Dakota": 23.45584415584415, "Maine": 23.935714285714287, "New Mexico": 24.122727272727275, "Virginia": 24.3920634920635, "Illinois": 24.53285714285715, "Connecticut": 24.64324324324324, "Massachusetts": 24.81351351351351, "Nebraska": 24.84430379746835, "Maryland": 25.071641791044772, "Wyoming": 25.096721311475402, "Arizona": 25.14090909090909, "Michigan": 25.14177215189873, "Pennsylvania": 25.143283582089545, "North Carolina": 25.249206349206347, "Nevada": 25.481034482758623, "Kansas": 25.944999999999993, "Florida": 25.9972602739726, "Iowa": 26.22105263157895, "Rhode Island": 26.243103448275853, "Virgin Islands": 26.255000000000003, "National": 26.266250000000007, "New York": 26.79999999999999, "Georgia": 27.15499999999999, "South Carolina": 27.190789473684205, "North Dakota": 27.801612903225802, "Texas": 27.89180327868852, "Guam": 28.134883720930226, "Delaware": 28.18307692307693, "Indiana": 28.235714285714288, "West Virginia": 28.39999999999999, "Tennessee": 28.412280701754383, "Oklahoma": 28.720833333333328, "Ohio": 28.78611111111111, "Missouri": 29.029850746268657, "New Jersey": 29.381428571428557, "Louisiana": 29.544594594594592, "Alabama": 29.892500000000013, "Mississippi": 30.129577464788724, "Arkansas": 30.601694915254228, "Kentucky": 31.028169014084494, "Puerto Rico": 40.62749999999999}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/54 HTTP/1.1" 200 -
+INFO:root:Job 55 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/states_mean HTTP/1.1" 200 -
+INFO:root:Job 55 is done and results are {"Puerto Rico": 14.778571428571428, "West Virginia": 24.041379310344826, "Oklahoma": 25.930769230769236, "Arkansas": 26.326923076923077, "Alabama": 26.62142857142857, "Louisiana": 27.406060606060603, "Mississippi": 27.478571428571424, "Tennessee": 27.928, "Missouri": 28.109999999999996, "Iowa": 28.879411764705882, "Kansas": 28.940625, "Kentucky": 28.98148148148148, "New Jersey": 29.068750000000005, "Texas": 29.808333333333337, "North Dakota": 30.01212121212121, "National": 30.01851851851852, "Massachusetts": 30.34074074074074, "Vermont": 30.68333333333333, "Indiana": 30.75151515151515, "Maine": 30.811111111111114, "Rhode Island": 30.885185185185183, "Virgin Islands": 30.900000000000002, "North Carolina": 30.945161290322577, "Nebraska": 30.970370370370368, "Connecticut": 31.053333333333327, "South Dakota": 31.07428571428572, "South Carolina": 31.112, "Maryland": 31.12121212121212, "Oregon": 31.244999999999997, "Pennsylvania": 31.265384615384612, "Wyoming": 31.319354838709668, "Montana": 31.461290322580645, "Wisconsin": 31.638461538461545, "Virginia": 31.739130434782602, "Florida": 31.74864864864865, "Ohio": 31.875, "Idaho": 32.00344827586206, "New Hampshire": 32.056, "Delaware": 32.2695652173913, "Georgia": 32.270967741935486, "Nevada": 32.292857142857144, "Michigan": 32.467999999999996, "New York": 32.85238095238095, "Illinois": 32.875, "Alaska": 32.99189189189189, "Washington": 33.26551724137931, "Hawaii": 33.30434782608695, "Minnesota": 33.47619047619047, "Arizona": 34.32592592592592, "California": 34.77083333333333, "New Mexico": 34.92799999999999, "Utah": 35.028571428571425, "District of Columbia": 35.13461538461538, "Colorado": 36.95416666666666, "Guam": 38.29333333333333}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/55 HTTP/1.1" 200 -
+INFO:root:Job 56 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/states_mean HTTP/1.1" 200 -
+INFO:root:Job 56 is done and results are {"Puerto Rico": 37.32000000000001, "Mississippi": 42.52333333333332, "Tennessee": 42.82592592592592, "Alabama": 43.40357142857143, "Oklahoma": 43.7551724137931, "Indiana": 44.37692307692306, "Louisiana": 44.630303030303025, "Guam": 44.98666666666667, "North Dakota": 45.51538461538461, "Arkansas": 45.54242424242424, "Georgia": 46.1, "Rhode Island": 46.2516129032258, "Texas": 46.262962962962966, "Kentucky": 46.57599999999999, "New York": 47.04583333333333, "Kansas": 47.119354838709675, "Iowa": 47.72173913043478, "Maryland": 47.82307692307692, "North Carolina": 47.94062500000001, "South Carolina": 47.97647058823529, "Pennsylvania": 48.162222222222226, "Ohio": 48.27391304347826, "South Dakota": 48.52692307692307, "National": 48.53214285714285, "West Virginia": 48.696, "New Jersey": 48.894999999999996, "Missouri": 48.92380952380952, "Virginia": 48.936666666666675, "Nebraska": 49.2, "Wyoming": 49.50000000000001, "Illinois": 49.744, "Delaware": 49.74814814814814, "Virgin Islands": 49.8, "Connecticut": 49.978571428571435, "Michigan": 50.53437499999998, "Nevada": 50.81153846153847, "District of Columbia": 50.876923076923084, "Massachusetts": 50.9969696969697, "Minnesota": 51.14722222222222, "Florida": 51.43793103448276, "Arizona": 51.60555555555557, "Maine": 52.446666666666665, "New Hampshire": 52.58148148148148, "Utah": 52.639393939393926, "Montana": 55.0090909090909, "Washington": 55.01290322580644, "Wisconsin": 55.10454545454545, "Alaska": 55.2969696969697, "New Mexico": 55.78148148148148, "California": 55.82058823529414, "Hawaii": 56.76, "Colorado": 56.77428571428571, "Oregon": 57.199999999999974, "Vermont": 57.48064516129032, "Idaho": 57.75333333333333}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/56 HTTP/1.1" 200 -
+INFO:root:Job 57 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/states_mean HTTP/1.1" 200 -
+INFO:root:Job 57 is done and results are {"Puerto Rico": 17.875, "Mississippi": 23.83225806451613, "Texas": 25.108695652173914, "Oklahoma": 25.17142857142857, "Alabama": 26.41363636363636, "Tennessee": 26.694117647058835, "Iowa": 27.41304347826087, "North Dakota": 27.796296296296298, "Indiana": 27.8, "North Carolina": 28.04666666666667, "Kentucky": 28.174074074074085, "Louisiana": 28.47931034482759, "Nebraska": 29.01739130434783, "Missouri": 29.067741935483877, "Connecticut": 29.221875, "Rhode Island": 29.253658536585355, "Arkansas": 29.285714285714285, "Kansas": 29.34347826086957, "Guam": 29.43125, "South Dakota": 29.696551724137933, "New York": 29.84761904761905, "West Virginia": 30.211538461538467, "Illinois": 30.313888888888886, "Pennsylvania": 30.423076923076927, "South Carolina": 30.49642857142857, "Delaware": 30.551724137931032, "Georgia": 30.733333333333327, "Ohio": 30.9, "New Jersey": 31.000000000000004, "Virginia": 31.069230769230767, "Virgin Islands": 31.1, "Maryland": 31.21923076923077, "District of Columbia": 31.443333333333335, "Nevada": 31.636363636363644, "National": 32.02333333333333, "Arizona": 32.025, "Massachusetts": 32.25000000000001, "Michigan": 32.27037037037038, "Minnesota": 32.36666666666667, "Utah": 32.629999999999995, "Florida": 33.53636363636364, "Wyoming": 33.71304347826087, "Idaho": 34.12058823529412, "New Hampshire": 34.59333333333334, "Washington": 34.70454545454545, "New Mexico": 34.87499999999999, "Maine": 35.31600000000001, "Wisconsin": 35.37142857142857, "Hawaii": 36.765, "Oregon": 37.19393939393939, "Alaska": 37.24999999999999, "California": 37.2952380952381, "Colorado": 37.44230769230769, "Vermont": 37.634615384615394, "Montana": 38.186666666666675}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/57 HTTP/1.1" 200 -
+INFO:root:Job 58 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "POST /api/states_mean HTTP/1.1" 200 -
+INFO:root:Job 58 is done and results are {"Vermont": 34.39411764705882, "Massachusetts": 34.42, "Connecticut": 35.276923076923076, "District of Columbia": 35.36190476190476, "Rhode Island": 35.416666666666664, "Maryland": 35.43333333333333, "Maine": 35.434999999999995, "New Hampshire": 35.438095238095244, "Utah": 36.050000000000004, "New Jersey": 36.20666666666667, "New York": 36.73571428571429, "Florida": 36.75, "Minnesota": 37.13333333333334, "California": 37.1764705882353, "Illinois": 37.412499999999994, "Colorado": 37.51111111111111, "Wisconsin": 38.0076923076923, "Delaware": 38.14375, "North Dakota": 38.525, "Pennsylvania": 38.60666666666667, "National": 38.76666666666666, "Oregon": 38.76842105263158, "Iowa": 38.88636363636363, "Hawaii": 39.00588235294117, "Arizona": 39.294736842105266, "Michigan": 39.44117647058823, "Virginia": 39.47500000000001, "Washington": 39.83333333333334, "Montana": 39.94, "Idaho": 39.95454545454545, "Georgia": 40.08, "Texas": 40.12307692307692, "Kansas": 40.135714285714286, "Alaska": 40.199999999999996, "South Dakota": 40.38461538461539, "North Carolina": 40.58, "Virgin Islands": 40.7, "Nebraska": 41.03333333333333, "New Mexico": 41.055555555555564, "Ohio": 41.0875, "Wyoming": 41.935294117647054, "Tennessee": 41.949999999999996, "Missouri": 42.09444444444444, "Indiana": 42.6888888888889, "South Carolina": 42.699999999999996, "Kentucky": 43.0, "Guam": 43.356249999999996, "Nevada": 43.43571428571429, "Arkansas": 43.73157894736842, "Alabama": 44.075, "West Virginia": 45.17, "Mississippi": 45.31666666666666, "Oklahoma": 45.45454545454546, "Louisiana": 46.168749999999996, "Puerto Rico": 49.416666666666664}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:55:13] "GET /api/get_results/58 HTTP/1.1" 200 -
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug:127.0.0.1 - - [29/Mar/2024 21:30:25] "POST /api/best5 HTTP/1.1" 200 -
+INFO:root:Job 1 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 1 is done and results are 52.446666666666665
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/1 HTTP/1.1" 200 -
+INFO:root:Job 2 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 2 is done and results are 19.91785714285714
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/2 HTTP/1.1" 200 -
+INFO:root:Job 3 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 3 is done and results are 35.08593750000001
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/3 HTTP/1.1" 200 -
+INFO:root:Job 4 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 4 is done and results are 44.98666666666667
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/4 HTTP/1.1" 200 -
+INFO:root:Job 5 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 5 is done and results are 34.6203125
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/5 HTTP/1.1" 200 -
+INFO:root:Job 6 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+ERROR:root:Job 6 is not in the queue or results
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/6 HTTP/1.1" 200 -
+INFO:root:Job 6 is done and results are 14.858823529411765
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/6 HTTP/1.1" 200 -
+INFO:root:Job 7 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 7 is done and results are 21.602941176470583
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/7 HTTP/1.1" 200 -
+INFO:root:Job 8 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+ERROR:root:Job 8 is not in the queue or results
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/8 HTTP/1.1" 200 -
+INFO:root:Job 8 is done and results are 20.4
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/8 HTTP/1.1" 200 -
+INFO:root:Job 9 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 9 is done and results are 48.53214285714285
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/9 HTTP/1.1" 200 -
+INFO:root:Job 10 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 10 is done and results are 26.757142857142856
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/10 HTTP/1.1" 200 -
+INFO:root:Job 11 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 11 is done and results are 17.65333333333334
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/11 HTTP/1.1" 200 -
+INFO:root:Job 12 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 12 is done and results are 20.14117647058824
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:01] "GET /api/get_results/12 HTTP/1.1" 200 -
+INFO:root:Job 13 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 13 is done and results are 22.104545454545452
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "GET /api/get_results/13 HTTP/1.1" 200 -
+INFO:root:Job 14 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "POST /api/state_mean HTTP/1.1" 200 -
+ERROR:root:Job 14 is not in the queue or results
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "GET /api/get_results/14 HTTP/1.1" 200 -
+INFO:root:Job 14 is done and results are 50.9969696969697
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "GET /api/get_results/14 HTTP/1.1" 200 -
+INFO:root:Job 15 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 15 is done and results are 52.446666666666665
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "GET /api/get_results/15 HTTP/1.1" 200 -
+INFO:root:Job 16 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 16 is done and results are 50.9969696969697
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "GET /api/get_results/16 HTTP/1.1" 200 -
+INFO:root:Job 17 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 17 is done and results are 34.31612903225807
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "GET /api/get_results/17 HTTP/1.1" 200 -
+INFO:root:Job 18 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 18 is done and results are 
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "GET /api/get_results/18 HTTP/1.1" 200 -
+INFO:root:Job 19 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "POST /api/state_mean HTTP/1.1" 200 -
+ERROR:root:Job 19 is not in the queue or results
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "GET /api/get_results/19 HTTP/1.1" 200 -
+INFO:root:Job 19 is done and results are 34.485454545454544
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "GET /api/get_results/19 HTTP/1.1" 200 -
+INFO:root:Job 20 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 20 is done and results are 48.53214285714285
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:58:02] "GET /api/get_results/20 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Job 1 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 1 is done and results are {"Maine": 52.446666666666665}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/1 HTTP/1.1" 200 -
+INFO:root:Job 2 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 2 is done and results are {"National": 19.91785714285714}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/2 HTTP/1.1" 200 -
+INFO:root:Job 3 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 3 is done and results are {"National": 35.08593750000001}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/3 HTTP/1.1" 200 -
+INFO:root:Job 4 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 4 is done and results are {"Guam": 44.98666666666667}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/4 HTTP/1.1" 200 -
+INFO:root:Job 5 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 5 is done and results are {"Massachusetts": 34.6203125}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/5 HTTP/1.1" 200 -
+INFO:root:Job 6 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 6 is done and results are {"Maine": 14.858823529411765}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/6 HTTP/1.1" 200 -
+INFO:root:Job 7 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 7 is done and results are 
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/7 HTTP/1.1" 200 -
+INFO:root:Job 8 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 8 is done and results are {"National": 20.4}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/8 HTTP/1.1" 200 -
+INFO:root:Job 9 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 9 is done and results are {"National": 48.53214285714285}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/9 HTTP/1.1" 200 -
+INFO:root:Job 10 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 10 is done and results are {"Guam": 26.757142857142856}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/10 HTTP/1.1" 200 -
+INFO:root:Job 11 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 11 is done and results are {"Massachusetts": 17.65333333333334}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/11 HTTP/1.1" 200 -
+INFO:root:Job 12 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 12 is done and results are {"Maine": 20.14117647058824}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/12 HTTP/1.1" 200 -
+INFO:root:Job 13 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 13 is done and results are {"Guam": 22.104545454545452}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/13 HTTP/1.1" 200 -
+INFO:root:Job 14 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 14 is done and results are {"Massachusetts": 50.9969696969697}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/14 HTTP/1.1" 200 -
+INFO:root:Job 15 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 15 is done and results are {"Maine": 52.446666666666665}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/15 HTTP/1.1" 200 -
+INFO:root:Job 16 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 16 is done and results are {"Massachusetts": 50.9969696969697}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/16 HTTP/1.1" 200 -
+INFO:root:Job 17 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 17 is done and results are {"Maine": 34.31612903225807}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/17 HTTP/1.1" 200 -
+INFO:root:Job 18 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 18 is done and results are {"Guam": 44.98666666666667}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/18 HTTP/1.1" 200 -
+INFO:root:Job 19 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 19 is done and results are {"Guam": 34.485454545454544}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/19 HTTP/1.1" 200 -
+INFO:root:Job 20 was added to the queue
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "POST /api/state_mean HTTP/1.1" 200 -
+INFO:root:Job 20 is done and results are {"National": 48.53214285714285}
+INFO:werkzeug:127.0.0.1 - - [30/Mar/2024 17:59:41] "GET /api/get_results/20 HTTP/1.1" 200 -
