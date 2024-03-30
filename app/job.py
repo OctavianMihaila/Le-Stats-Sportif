@@ -1,17 +1,12 @@
 from typing import Callable
-# from flask import jsonify
 import json
-# from app import data_ingestor
 from app import webserver
 
-# returns results 
 JobRoutine = Callable[[dict], None] 
 
 class Job:
     def __init__(self, job_id, job_routine: JobRoutine, request_data):
-
         self.job_id = job_id
-        # print('Created job with id ', job_id)
         self.job_routine = job_routine
         self.request_data = request_data
         self.result = None
@@ -26,13 +21,8 @@ def states_mean(job_id, request_data):
     data = webserver.data_ingestor.get_data()
 
     results = calculate_arithmetic_mean(request_data, data)
+    # Sort the results by value in ascending order
     results = dict(sorted(results.items(), key=lambda item: item[1]))
-
-    # # print to results/<job_id>
-    # with open(f"results/{job_id}", "w") as f:
-    #     print('Writing the file with job_id: ', job_id)
-    #     # print('Results are: ', results)
-    #     f.write(json.dumps(results))
 
     return results
 
@@ -42,18 +32,18 @@ def state_mean(job_id, request_data):
     data = webserver.data_ingestor.get_data()
     target_state = request_data['state']
 
-    # calculate arithmetic mean for a single state
+    # Calculate arithmetic mean for a single state
     for field in data:
-        if 2011 <= int(field['YearStart']) and int(field['YearEnd']) <= 2022 and field['LocationDesc'] == target_state and field['Question'] == request_data['question']:
+        if (2011 <= int(field['YearStart']) and 
+            int(field['YearEnd']) <= 2022 and 
+            field['LocationDesc'] == target_state and 
+            field['Question'] == request_data['question']):
+
             results += float(field['Data_Value'])
             entries += 1
 
     results /= entries
-
     formatted_results = {target_state: results}
-
-    # with open(f"results/{job_id}", "w") as f:
-    #     f.write(json.dumps(formatted_results))
 
     return formatted_results
 
@@ -90,9 +80,12 @@ def global_mean(job_id, request_data):
     data = webserver.data_ingestor.get_data()
     question = request_data['question']
 
-    # calculate arithmetic mean for all the entries that match the question
+    # Calculate arithmetic mean for all the entries that match the question
     for field in data:
-        if 2011 <= int(field['YearStart']) and int(field['YearEnd']) <= 2022 and field['Question'] == question:
+        if (2011 <= int(field['YearStart']) and
+            int(field['YearEnd']) <= 2022 and
+            field['Question'] == question):
+
             result += float(field['Data_Value'])
             entries += 1
 
@@ -107,12 +100,9 @@ def diff_from_mean(job_id, request_data):
     states_results = states_mean(job_id, request_data)
     global_mean_val = global_mean(job_id, request_data)
 
+    # Calculate the difference between the global mean and the mean of each state
     for state, value in states_results.items():
         results[state] = global_mean_val['global_mean'] - value
-
-    # with open(f"results/{job_id}", "w") as f:
-    #     print('Succesfully wrote to file')
-    #     f.write(json.dumps(results))
 
     return results
 
@@ -121,7 +111,6 @@ def state_diff_from_mean(job_id, request_data):
     state_mean_val = state_mean(job_id, request_data)
 
     result = global_mean_val['global_mean'] - state_mean_val[request_data['state']]
-
     formatted_results = {request_data['state']: result}
 
     return formatted_results
@@ -136,8 +125,9 @@ def mean_by_category(job_id, request_data):
         stratificationCategory1 = field['StratificationCategory1']
         state = field['LocationDesc']
 
-        if field['Question'] == request_data['question'] and stratificationCategory1 != '' and stratification1 != '':
-            # ('Alabama', 'Age (years)', '18 - 24')
+        if (field['Question'] == request_data['question'] 
+            and stratificationCategory1 != '' and stratification1 != ''):
+            # Using a string format like this one ('Alabama', 'Age (years)', '18 - 24') as key.
             key = '(\'' + state + '\', \'' + stratificationCategory1 + '\', \'' + stratification1 + '\')'
             if key not in results:
                 results[key] = float(field['Data_Value'])
@@ -164,7 +154,7 @@ def state_mean_by_category(job_id, request_data):
         state = field['LocationDesc']
 
         if field['Question'] == question and state == target_state:
-            # ('Age (years)', '18 - 24')
+            # Using a string format like this one ('Age (years)', '18 - 24') as key.
             key = '(\'' + stratificationCategory1 + '\', \'' + stratification1 + '\')'
             if key not in results:
                 results[key] = float(field['Data_Value'])
@@ -180,12 +170,15 @@ def state_mean_by_category(job_id, request_data):
 
     return formatted_results
 
+# Helper function to calculate the arithmetic mean (2011 - 2022) for a given question
 def calculate_arithmetic_mean(request_data, data):
     results = {}
     entries = {}
 
     for field in data:
-        if 2011 <= int(field['YearStart']) and int(field['YearEnd']) <= 2022 and field['Question'] == request_data['question']:
+        if (2011 <= int(field['YearStart']) 
+            and int(field['YearEnd']) <= 2022 
+            and field['Question'] == request_data['question']):
             location_desc = field['LocationDesc']
             if location_desc not in results:
                 results[location_desc] = float(field['Data_Value'])

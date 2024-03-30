@@ -6,29 +6,14 @@ import json
 
 class ThreadPool:
     def __init__(self):
-        # You must implement a ThreadPool of TaskRunners
-        # Your ThreadPool should check if an environment variable TP_NUM_OF_THREADS is defined
-        # If the env var is defined, that is the number of threads to be used by the thread pool
-        # Otherwise, you are to use what the hardware concurrency allows
-        # You are free to write your implementation as you see fit, but
-        # You must NOT:
-        #   * create more threads than the hardware concurrency allows
-        #   * recreate threads for each task
-
+        # TP_NUM_OF_THREADS is the environment variable that will be used to set the number of threads
         if 'TP_NUM_OF_THREADS' in os.environ:
             self.num_threads = int(os.environ['TP_NUM_OF_THREADS'])
-        else:
+        else: # If the environment variable is not set, use the number of CPUs the machine has
             self.num_threads = os.cpu_count()
 
-        # Jobs that are waiting to be executed or are currently being executed
         self.waiting_jobs = Queue()
-        
-        # Jobs that are finished
-        self.job_results = {}
-
         self.shutdown_event = Event()
-        self.file_write_lock = Lock()
-
         threads = []
 
         for _ in range(self.num_threads):
@@ -41,6 +26,12 @@ class ThreadPool:
 
     def get_first_waiting_job(self):
         return self.waiting_jobs.get()
+    
+    def get_shutdown_event(self):
+        return self.shutdown_event
+    
+    def set_shutdown_event(self):
+        self.shutdown_event.set()
 
 class TaskRunner(Thread):
     def __init__(self, thread_pool):
@@ -49,12 +40,11 @@ class TaskRunner(Thread):
 
     def run(self):
         while not self.thread_pool.shutdown_event.is_set():
-            # TODO
             # Get pending job
             job = self.thread_pool.get_first_waiting_job()
             # Execute the job and save the result to disk
             results = job.execute()
-            # print('Results are: ', results)
-            with self.thread_pool.file_write_lock:
-                with open(f"results/{job.job_id}", "w") as f:
-                    f.write(json.dumps(results))
+
+            # Save the results to disk
+            with open(f"results/{job.job_id}", "w") as f:
+                f.write(json.dumps(results))

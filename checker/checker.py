@@ -29,8 +29,8 @@ class TestAPI(unittest.TestCase):
             response_data = response.json()
             # print(f"Response_data\n{response_data}")
             if response_data['status'] == 'done':
-                print(f"Response data {response_data['data']} and type {type(response_data['data'])}")
-                print(f"Ref data {ref_result} and type {type(ref_result)}")
+                # print(f"Response data {response_data['data']} and type {type(response_data['data'])}")
+                # print(f"Ref data {ref_result} and type {type(ref_result)}")
                 d = DeepDiff(response_data['data'], ref_result, math_epsilon=0.01)
                 self.assertTrue(d == {}, str(d))
                 break
