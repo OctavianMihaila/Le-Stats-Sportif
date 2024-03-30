@@ -1,7 +1,8 @@
 from queue import Queue
-from threading import Thread, Event
+from threading import Thread, Event, Lock
 import time
 import os
+import json
 
 class ThreadPool:
     def __init__(self):
@@ -26,6 +27,7 @@ class ThreadPool:
         self.job_results = {}
 
         self.shutdown_event = Event()
+        self.file_write_lock = Lock()
 
         threads = []
 
@@ -51,4 +53,8 @@ class TaskRunner(Thread):
             # Get pending job
             job = self.thread_pool.get_first_waiting_job()
             # Execute the job and save the result to disk
-            job.execute()
+            results = job.execute()
+            # print('Results are: ', results)
+            with self.thread_pool.file_write_lock:
+                with open(f"results/{job.job_id}", "w") as f:
+                    f.write(json.dumps(results))

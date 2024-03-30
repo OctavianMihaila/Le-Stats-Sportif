@@ -4,14 +4,14 @@ import json
 # from app import data_ingestor
 from app import webserver
 
-# Strategy interface
-JobRoutine = Callable[[dict], None]
+# returns results 
+JobRoutine = Callable[[dict], None] 
 
 class Job:
     def __init__(self, job_id, job_routine: JobRoutine, request_data):
 
         self.job_id = job_id
-        print('Created job with id ', job_id)
+        # print('Created job with id ', job_id)
         self.job_routine = job_routine
         self.request_data = request_data
         self.result = None
@@ -19,14 +19,7 @@ class Job:
     def execute(self):
         # Execute the job using the assigned routine
         self.result = self.job_routine(self.job_id, self.request_data)
-        
 
-    def save_result(self):
-        # Implement saving result to disk
-        print(f"Saving result for {self.job_id}: {self.result}")
-
-    def get_result(self):
-        # Return the result
         return self.result
 
 def states_mean(job_id, request_data):
@@ -35,11 +28,11 @@ def states_mean(job_id, request_data):
     results = calculate_arithmetic_mean(request_data, data)
     results = dict(sorted(results.items(), key=lambda item: item[1]))
 
-    # print to results/<job_id>
-    with open(f"results/{job_id}", "w") as f:
-        print('Writing the file with job_id: ', job_id)
-        # print('Results are: ', results)
-        f.write(json.dumps(results))
+    # # print to results/<job_id>
+    # with open(f"results/{job_id}", "w") as f:
+    #     print('Writing the file with job_id: ', job_id)
+    #     # print('Results are: ', results)
+    #     f.write(json.dumps(results))
 
     return results
 
@@ -59,22 +52,22 @@ def state_mean(job_id, request_data):
 
     formatted_results = {target_state: results}
 
-    with open(f"results/{job_id}", "w") as f:
-        f.write(json.dumps(formatted_results))
+    # with open(f"results/{job_id}", "w") as f:
+    #     f.write(json.dumps(formatted_results))
 
-    return results
+    return formatted_results
 
 
 def best5(job_id, request_data):
     data = webserver.data_ingestor.get_data()
 
     results = calculate_arithmetic_mean(request_data, data)
+    sort_order = webserver.data_ingestor.get_sort_order(request_data['question'])
 
-    # get only the top 5
-    results = dict(sorted(results.items(), key=lambda item: item[1], reverse=True)[:5])
-
-    with open(f"results/{job_id}", "w") as f:
-        f.write(json.dumps(results))
+    if sort_order == 'asc':
+        results = dict(sorted(results.items(), key=lambda item: item[1])[:5])
+    else:
+        results = dict(sorted(results.items(), key=lambda item: item[1], reverse=True)[:5])
 
     return results
 
@@ -82,12 +75,14 @@ def worst5(job_id, request_data):
     data = webserver.data_ingestor.get_data()
 
     results = calculate_arithmetic_mean(request_data, data)
+    sort_order = webserver.data_ingestor.get_sort_order(request_data['question'])
 
-    # get only the bottom 5
-    results = dict(sorted(results.items(), key=lambda item: item[1])[:5])
+    if sort_order == 'asc':
+        results = dict(sorted(results.items(), key=lambda item: item[1], reverse=True)[:5])
+    else:
+        results = dict(sorted(results.items(), key=lambda item: item[1])[:5])
 
-    with open(f"results/{job_id}", "w") as f:
-        f.write(json.dumps(results))
+    return results
 
 def global_mean(job_id, request_data):
     result = 0
@@ -102,11 +97,9 @@ def global_mean(job_id, request_data):
             entries += 1
 
     result /= entries
+    formatted_results = {'global_mean': result}
 
-    with open(f"results/{job_id}", "w") as f:
-        f.write(json.dumps(result))
-
-    return result
+    return formatted_results
 
 def diff_from_mean(job_id, request_data):
     results = {}
@@ -115,11 +108,11 @@ def diff_from_mean(job_id, request_data):
     global_mean_val = global_mean(job_id, request_data)
 
     for state, value in states_results.items():
-        results[state] = global_mean_val - value
+        results[state] = global_mean_val['global_mean'] - value
 
-    with open(f"results/{job_id}", "w") as f:
-        print('Succesfully wrote to file')
-        f.write(json.dumps(results))
+    # with open(f"results/{job_id}", "w") as f:
+    #     print('Succesfully wrote to file')
+    #     f.write(json.dumps(results))
 
     return results
 
@@ -127,7 +120,11 @@ def state_diff_from_mean(job_id, request_data):
     global_mean_val = global_mean(job_id, request_data)
     state_mean_val = state_mean(job_id, request_data)
 
-    return global_mean_val - state_mean_val
+    result = global_mean_val['global_mean'] - state_mean_val[request_data['state']]
+
+    formatted_results = {request_data['state']: result}
+
+    return formatted_results
 
 def mean_by_category(job_id, request_data):
     results = {}
@@ -139,22 +136,18 @@ def mean_by_category(job_id, request_data):
         stratificationCategory1 = field['StratificationCategory1']
         state = field['LocationDesc']
 
-        if field['Question'] == request_data['question']:
-            # data_tuple = (state, stratification1, stratificationCategory1)
-            # make a string hash out of the 3 values by concatenating them
-            data_tuple = state + stratification1 + stratificationCategory1
-            if data_tuple not in results:
-                results[data_tuple] = float(field['Data_Value'])
-                entries[data_tuple] = 1
+        if field['Question'] == request_data['question'] and stratificationCategory1 != '' and stratification1 != '':
+            # ('Alabama', 'Age (years)', '18 - 24')
+            key = '(\'' + state + '\', \'' + stratificationCategory1 + '\', \'' + stratification1 + '\')'
+            if key not in results:
+                results[key] = float(field['Data_Value'])
+                entries[key] = 1
             else:
-                results[data_tuple] += float(field['Data_Value'])
-                entries[data_tuple] += 1
+                results[key] += float(field['Data_Value'])
+                entries[key] += 1
 
     for key in results:
         results[key] /= entries[key]
-
-    with open(f"results/{job_id}", "w") as f:
-        f.write(json.dumps(results))
 
     return results
 
@@ -171,23 +164,21 @@ def state_mean_by_category(job_id, request_data):
         state = field['LocationDesc']
 
         if field['Question'] == question and state == target_state:
-            # data_tuple = (state, stratification1, stratificationCategory1)
-            # make a string hash out of the 3 values by concatenating them
-            data_tuple = stratification1 + stratificationCategory1
-            if data_tuple not in results:
-                results[data_tuple] = float(field['Data_Value'])
-                entries[data_tuple] = 1
+            # ('Age (years)', '18 - 24')
+            key = '(\'' + stratificationCategory1 + '\', \'' + stratification1 + '\')'
+            if key not in results:
+                results[key] = float(field['Data_Value'])
+                entries[key] = 1
             else:
-                results[data_tuple] += float(field['Data_Value'])
-                entries[data_tuple] += 1
+                results[key] += float(field['Data_Value'])
+                entries[key] += 1
 
     for key in results:
         results[key] /= entries[key]
 
-    with open(f"results/{job_id}", "w") as f:
-        f.write(json.dumps(results))
+    formatted_results = {target_state: results}
 
-    return results
+    return formatted_results
 
 def calculate_arithmetic_mean(request_data, data):
     results = {}

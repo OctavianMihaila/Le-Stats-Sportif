@@ -26,6 +26,14 @@ class DataIngestor:
 
     def get_data(self):
         return self.data
+    
+    def get_sort_order(self, question: str):
+        if question in self.questions_best_is_min:
+            return 'asc'
+        elif question in self.questions_best_is_max:
+            return 'desc'
+        else:
+            return None
 
 #     # def a function that prints the frist 3 rows of the data
 #     def print_first_3_rows(self):

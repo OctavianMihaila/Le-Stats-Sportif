@@ -11,7 +11,7 @@ def post_endpoint():
     if request.method == 'POST':
         # Assuming the request contains JSON data
         data = request.json
-        print(f"got data in post {data}")
+        # print(f"got data in post {data}")
 
         # Process the received data
         # For demonstration purposes, just echoing back the received data
@@ -49,7 +49,9 @@ def get_response(job_id):
         with open(f"results/{job_id}", "r") as f:
             results = f.read()
             logging.info(f"Job {job_id} is done and results are {results}")
-            return jsonify({"status": "done", "data": results})
+            # return jsonify({"status": "done", "data": results})
+            # return as dict, not json
+            return {"status": "done", "data": json.loads(results)}
 
     logging.error(f"Job {job_id} is not in the queue or results")
 
