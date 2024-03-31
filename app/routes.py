@@ -49,7 +49,7 @@ def get_response(job_id):
     if os.path.exists(f"results/{job_id}"):
         with open(f"results/{job_id}", "r") as f:
             results = f.read()
-            logging.info(f"Job {job_id} is done and results are (first 100 chars): {results[:100]}")
+            logging.info(f"Job {job_id} is done and results are (first 100 chars):  {results}")
             
             if results == '':
                 return {"status": "done", "data": {}}
@@ -63,7 +63,6 @@ def get_response(job_id):
 @webserver.route('/api/jobs', methods=['GET'])
 def get_jobs_info():
     logging.info("Received GET request at /api/jobs")
-
     result = {}
 
     waiting_jobs = webserver.tasks_runner.get_waiting_jobs()
@@ -93,7 +92,6 @@ def get_num_jobs():
 @webserver.route('/api/states_mean', methods=['POST'])
 def states_mean_request():
     logging.info("Received POST request at /api/states_mean")
-
     data = request.json
 
     new_job = Job(webserver.job_counter, states_mean, data)
@@ -107,7 +105,6 @@ def states_mean_request():
 @webserver.route('/api/state_mean', methods=['POST'])
 def state_mean_request():
     logging.info("Received POST request at /api/state_mean")
-
     data = request.json
 
     new_job = Job(webserver.job_counter, state_mean, data)
@@ -121,7 +118,6 @@ def state_mean_request():
 @webserver.route('/api/best5', methods=['POST'])
 def best5_request():
     logging.info("Received POST request at /api/best5")
-
     data = request.json
 
     new_job = Job(webserver.job_counter, best5, data)
@@ -135,7 +131,6 @@ def best5_request():
 @webserver.route('/api/worst5', methods=['POST'])
 def worst5_request():
     logging.info("Received POST request at /api/worst5")
-
     data = request.json
 
     new_job = Job(webserver.job_counter, worst5, data)
@@ -149,7 +144,6 @@ def worst5_request():
 @webserver.route('/api/global_mean', methods=['POST'])
 def global_mean_request():
     logging.info("Received POST request at /api/global_mean")
-
     data = request.json
 
     new_job = Job(webserver.job_counter, global_mean, data)
@@ -163,7 +157,6 @@ def global_mean_request():
 @webserver.route('/api/diff_from_mean', methods=['POST'])
 def diff_from_mean_request():
     logging.info("Received POST request at /api/diff_from_mean")
-
     data = request.json
 
     new_job = Job(webserver.job_counter, diff_from_mean, data)
@@ -177,7 +170,6 @@ def diff_from_mean_request():
 @webserver.route('/api/state_diff_from_mean', methods=['POST'])
 def state_diff_from_mean_request():
     logging.info("Received POST request at /api/state_diff_from_mean")
-
     data = request.json
 
     new_job = Job(webserver.job_counter, state_diff_from_mean, data)
@@ -190,7 +182,6 @@ def state_diff_from_mean_request():
 @webserver.route('/api/mean_by_category', methods=['POST'])
 def mean_by_category_request():
     logging.info("Received POST request at /api/mean_by_category")
-
     data = request.json
 
     new_job = Job(webserver.job_counter, mean_by_category, data)
@@ -204,7 +195,6 @@ def mean_by_category_request():
 @webserver.route('/api/state_mean_by_category', methods=['POST'])
 def state_mean_by_category_request():
     logging.info("Received POST request at /api/state_mean_by_category")
-
     data = request.json
 
     new_job = Job(webserver.job_counter, state_mean_by_category, data)
