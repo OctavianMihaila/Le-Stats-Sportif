@@ -6,7 +6,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 import time
 
-# Max size of the log file is 1MB, and we keep 20 backup copies
+# Max size of the log file is 256 KB, and we keep 20 backup copies
 handler = RotatingFileHandler('webserver.log', maxBytes=256*256, backupCount=20)
 handler.setLevel(logging.INFO)
 

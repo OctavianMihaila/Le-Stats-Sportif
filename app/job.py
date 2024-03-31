@@ -17,7 +17,9 @@ class Job:
         # Execute the job using the assigned routine
         logging.info(f"Executing job {self.job_id}, with routine {self.job_routine.__name__}")
         self.result = self.job_routine(self.job_id, self.request_data)
-        logging.info(f"Job {self.job_id} executed successfully. Result (first 100 chars): {str(self.result)[:100]}")
+        logging.info(f"Job {self.job_id} executed successfully. "
+             f"Result (first 100 chars): {str(self.result)[:100]}")
+
 
         return self.result
 

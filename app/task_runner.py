@@ -1,6 +1,5 @@
 from queue import Queue
-from threading import Thread, Event, Lock
-import time
+from threading import Thread, Event
 import os
 import json
 

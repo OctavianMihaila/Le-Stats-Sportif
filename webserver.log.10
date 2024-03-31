@@ -1,0 +1,8 @@
+2024-03-31 12:41:12,654 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "GET /api/get_results/370 HTTP/1.1" 200 -
+2024-03-31 12:41:12,681 - INFO - Received POST request at /api/mean_by_category
+2024-03-31 12:41:12,681 - INFO - Job 371 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have an overweight classification'}
+2024-03-31 12:41:12,681 - INFO - Job 371 was added to the queue
+2024-03-31 12:41:12,681 - INFO - Executing job 371, with routine mean_by_category
+2024-03-31 12:41:12,682 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "POST /api/mean_by_category HTTP/1.1" 200 -
+2024-03-31 12:41:12,692 - INFO - Job 371 executed successfully. Result (first 100 chars): {"('Wisconsin', 'Age (years)', '35 - 44')": 32.86666666666667, "('North Dakota', 'Total', 'Total')":
+2024-03-31 12:41:12,696 - INFO - Received GET request at /api/get_results/371

@@ -1,0 +1,62 @@
+2024-03-31 12:41:12,512 - INFO - Job 364 was added to the queue
+2024-03-31 12:41:12,512 - INFO - Executing job 364, with routine global_mean
+2024-03-31 12:41:12,514 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "POST /api/global_mean HTTP/1.1" 200 -
+2024-03-31 12:41:12,534 - INFO - Job 364 executed successfully. Result (first 100 chars): {'global_mean': 21.40557939914165}
+2024-03-31 12:41:12,535 - INFO - Received GET request at /api/get_results/364
+2024-03-31 12:41:12,536 - INFO - Job 364 is done and results are (first 100 chars):  {"global_mean": 21.40557939914165}
+2024-03-31 12:41:12,536 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "GET /api/get_results/364 HTTP/1.1" 200 -
+2024-03-31 12:41:12,539 - INFO - Received POST request at /api/global_mean
+2024-03-31 12:41:12,539 - INFO - Job 365 created successfully. Data: {'question': 'Percent of adults who engage in no leisure-time physical activity'}
+2024-03-31 12:41:12,539 - INFO - Job 365 was added to the queue
+2024-03-31 12:41:12,539 - INFO - Executing job 365, with routine global_mean
+2024-03-31 12:41:12,539 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "POST /api/global_mean HTTP/1.1" 200 -
+2024-03-31 12:41:12,551 - INFO - Job 365 executed successfully. Result (first 100 chars): {'global_mean': 25.640110344827672}
+2024-03-31 12:41:12,553 - INFO - Received GET request at /api/get_results/365
+2024-03-31 12:41:12,553 - INFO - Job 365 is done and results are (first 100 chars):  {"global_mean": 25.640110344827672}
+2024-03-31 12:41:12,553 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "GET /api/get_results/365 HTTP/1.1" 200 -
+2024-03-31 12:41:12,556 - INFO - Received POST request at /api/global_mean
+2024-03-31 12:41:12,557 - INFO - Job 366 created successfully. Data: {'question': 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'}
+2024-03-31 12:41:12,557 - INFO - Job 366 was added to the queue
+2024-03-31 12:41:12,557 - INFO - Executing job 366, with routine global_mean
+2024-03-31 12:41:12,557 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "POST /api/global_mean HTTP/1.1" 200 -
+2024-03-31 12:41:12,570 - INFO - Job 366 executed successfully. Result (first 100 chars): {'global_mean': 30.920040899795634}
+2024-03-31 12:41:12,572 - INFO - Received GET request at /api/get_results/366
+2024-03-31 12:41:12,573 - INFO - Job 366 is done and results are (first 100 chars):  {"global_mean": 30.920040899795634}
+2024-03-31 12:41:12,573 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "GET /api/get_results/366 HTTP/1.1" 200 -
+2024-03-31 12:41:12,577 - INFO - Received POST request at /api/global_mean
+2024-03-31 12:41:12,577 - INFO - Job 367 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'}
+2024-03-31 12:41:12,577 - INFO - Job 367 was added to the queue
+2024-03-31 12:41:12,577 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "POST /api/global_mean HTTP/1.1" 200 -
+2024-03-31 12:41:12,577 - INFO - Executing job 367, with routine global_mean
+2024-03-31 12:41:12,589 - INFO - Job 367 executed successfully. Result (first 100 chars): {'global_mean': 49.808918032787034}
+2024-03-31 12:41:12,590 - INFO - Received GET request at /api/get_results/367
+2024-03-31 12:41:12,590 - INFO - Job 367 is done and results are (first 100 chars):  {"global_mean": 49.808918032787034}
+2024-03-31 12:41:12,590 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "GET /api/get_results/367 HTTP/1.1" 200 -
+2024-03-31 12:41:12,593 - INFO - Received POST request at /api/global_mean
+2024-03-31 12:41:12,594 - INFO - Job 368 created successfully. Data: {'question': 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'}
+2024-03-31 12:41:12,594 - INFO - Job 368 was added to the queue
+2024-03-31 12:41:12,594 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "POST /api/global_mean HTTP/1.1" 200 -
+2024-03-31 12:41:12,594 - INFO - Executing job 368, with routine global_mean
+2024-03-31 12:41:12,600 - INFO - Received GET request at /api/get_results/368
+2024-03-31 12:41:12,606 - ERROR - Job 368 is not in the queue or results
+2024-03-31 12:41:12,606 - INFO - Job 368 executed successfully. Result (first 100 chars): {'global_mean': 31.143779421654234}
+2024-03-31 12:41:12,607 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "GET /api/get_results/368 HTTP/1.1" 200 -
+2024-03-31 12:41:12,610 - INFO - Received GET request at /api/get_results/368
+2024-03-31 12:41:12,610 - INFO - Job 368 is done and results are (first 100 chars):  {"global_mean": 31.143779421654234}
+2024-03-31 12:41:12,611 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "GET /api/get_results/368 HTTP/1.1" 200 -
+2024-03-31 12:41:12,614 - INFO - Received POST request at /api/global_mean
+2024-03-31 12:41:12,615 - INFO - Job 369 created successfully. Data: {'question': 'Percent of adults who report consuming fruit less than one time daily'}
+2024-03-31 12:41:12,615 - INFO - Job 369 was added to the queue
+2024-03-31 12:41:12,615 - INFO - Executing job 369, with routine global_mean
+2024-03-31 12:41:12,615 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "POST /api/global_mean HTTP/1.1" 200 -
+2024-03-31 12:41:12,626 - INFO - Job 369 executed successfully. Result (first 100 chars): {'global_mean': 39.69942129629632}
+2024-03-31 12:41:12,628 - INFO - Received GET request at /api/get_results/369
+2024-03-31 12:41:12,628 - INFO - Job 369 is done and results are (first 100 chars):  {"global_mean": 39.69942129629632}
+2024-03-31 12:41:12,628 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "GET /api/get_results/369 HTTP/1.1" 200 -
+2024-03-31 12:41:12,636 - INFO - Received POST request at /api/mean_by_category
+2024-03-31 12:41:12,636 - INFO - Job 370 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have obesity'}
+2024-03-31 12:41:12,637 - INFO - Job 370 was added to the queue
+2024-03-31 12:41:12,637 - INFO - Executing job 370, with routine mean_by_category
+2024-03-31 12:41:12,637 - INFO - 127.0.0.1 - - [31/Mar/2024 15:41:12] "POST /api/mean_by_category HTTP/1.1" 200 -
+2024-03-31 12:41:12,648 - INFO - Job 370 executed successfully. Result (first 100 chars): {"('Ohio', 'Income', '$75,000 or greater')": 29.225, "('New Mexico', 'Income', '$25,000 - $34,999')"
+2024-03-31 12:41:12,650 - INFO - Received GET request at /api/get_results/370
