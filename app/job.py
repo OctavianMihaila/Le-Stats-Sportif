@@ -1,6 +1,7 @@
 from typing import Callable
 import json
 from app import webserver
+import logging
 
 JobRoutine = Callable[[dict], None] 
 
@@ -10,10 +11,13 @@ class Job:
         self.job_routine = job_routine
         self.request_data = request_data
         self.result = None
+        logging.info(f"Job {self.job_id} created successfully. Data: {self.request_data}")
 
     def execute(self):
         # Execute the job using the assigned routine
+        logging.info(f"Executing job {self.job_id}, with routine {self.job_routine.__name__}")
         self.result = self.job_routine(self.job_id, self.request_data)
+        logging.info(f"Job {self.job_id} executed successfully. Result (first 100 chars): {str(self.result)[:100]}")
 
         return self.result
 

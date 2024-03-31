@@ -9,6 +9,8 @@ import json
 # Example endpoint definition
 @webserver.route('/api/post_endpoint', methods=['POST'])
 def post_endpoint():
+    logging.info("Received POST request at /api/post_endpoint")
+
     if request.method == 'POST':
         data = request.json
         # Process the received data
@@ -23,6 +25,8 @@ def post_endpoint():
 
 @webserver.route('/api/get_results/<job_id>', methods=['GET'])
 def get_response(job_id):
+    logging.info(f"Received GET request at /api/get_results/{job_id}")
+
     # Check if job_id is valid
     if int(job_id) > int(webserver.job_counter) or int(job_id) < 1:
         logging.error(f"Invalid job_id {job_id}")
@@ -45,7 +49,7 @@ def get_response(job_id):
     if os.path.exists(f"results/{job_id}"):
         with open(f"results/{job_id}", "r") as f:
             results = f.read()
-            logging.info(f"Job {job_id} is done and results are {results}")
+            logging.info(f"Job {job_id} is done and results are (first 100 chars): {results[:100]}")
             
             if results == '':
                 return {"status": "done", "data": {}}
@@ -58,6 +62,8 @@ def get_response(job_id):
 
 @webserver.route('/api/jobs', methods=['GET'])
 def get_jobs_info():
+    logging.info("Received GET request at /api/jobs")
+
     result = {}
 
     waiting_jobs = webserver.tasks_runner.get_waiting_jobs()
@@ -74,6 +80,8 @@ def get_jobs_info():
 
 @webserver.route('/api/num_jobs', methods=['GET'])
 def get_num_jobs():
+    logging.info("Received GET request at /api/num_jobs")
+
     if webserver.tasks_runner.get_shutdown_event().is_set():
         return jsonify({"num_jobs": 0})
     
@@ -84,6 +92,8 @@ def get_num_jobs():
 
 @webserver.route('/api/states_mean', methods=['POST'])
 def states_mean_request():
+    logging.info("Received POST request at /api/states_mean")
+
     data = request.json
 
     new_job = Job(webserver.job_counter, states_mean, data)
@@ -96,6 +106,8 @@ def states_mean_request():
 
 @webserver.route('/api/state_mean', methods=['POST'])
 def state_mean_request():
+    logging.info("Received POST request at /api/state_mean")
+
     data = request.json
 
     new_job = Job(webserver.job_counter, state_mean, data)
@@ -108,6 +120,8 @@ def state_mean_request():
 
 @webserver.route('/api/best5', methods=['POST'])
 def best5_request():
+    logging.info("Received POST request at /api/best5")
+
     data = request.json
 
     new_job = Job(webserver.job_counter, best5, data)
@@ -120,6 +134,8 @@ def best5_request():
 
 @webserver.route('/api/worst5', methods=['POST'])
 def worst5_request():
+    logging.info("Received POST request at /api/worst5")
+
     data = request.json
 
     new_job = Job(webserver.job_counter, worst5, data)
@@ -132,6 +148,8 @@ def worst5_request():
 
 @webserver.route('/api/global_mean', methods=['POST'])
 def global_mean_request():
+    logging.info("Received POST request at /api/global_mean")
+
     data = request.json
 
     new_job = Job(webserver.job_counter, global_mean, data)
@@ -144,6 +162,8 @@ def global_mean_request():
 
 @webserver.route('/api/diff_from_mean', methods=['POST'])
 def diff_from_mean_request():
+    logging.info("Received POST request at /api/diff_from_mean")
+
     data = request.json
 
     new_job = Job(webserver.job_counter, diff_from_mean, data)
@@ -156,6 +176,8 @@ def diff_from_mean_request():
 
 @webserver.route('/api/state_diff_from_mean', methods=['POST'])
 def state_diff_from_mean_request():
+    logging.info("Received POST request at /api/state_diff_from_mean")
+
     data = request.json
 
     new_job = Job(webserver.job_counter, state_diff_from_mean, data)
@@ -167,6 +189,8 @@ def state_diff_from_mean_request():
 
 @webserver.route('/api/mean_by_category', methods=['POST'])
 def mean_by_category_request():
+    logging.info("Received POST request at /api/mean_by_category")
+
     data = request.json
 
     new_job = Job(webserver.job_counter, mean_by_category, data)
@@ -179,6 +203,8 @@ def mean_by_category_request():
 
 @webserver.route('/api/state_mean_by_category', methods=['POST'])
 def state_mean_by_category_request():
+    logging.info("Received POST request at /api/state_mean_by_category")
+
     data = request.json
 
     new_job = Job(webserver.job_counter, state_mean_by_category, data)
@@ -193,6 +219,8 @@ def state_mean_by_category_request():
 @webserver.route('/')
 @webserver.route('/index')
 def index():
+    logging.info("Received GET request at / or /index")
+
     routes = get_defined_routes()
     msg = f"Hello, World!\n Interact with the webserver using one of the defined routes:\n"
 
@@ -213,6 +241,8 @@ def get_defined_routes():
 
 @webserver.route('/api/graceful_shutdown', methods=['GET'])
 def handle_shutdown():
+    logging.info("Received GET request at /api/graceful_shutdown")
+
     if webserver.tasks_runner is not None:
         webserver.tasks_runner.set_shutdown_event()
         return jsonify({"status": "shutting down"}), 200
