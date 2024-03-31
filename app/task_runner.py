@@ -12,7 +12,7 @@ class ThreadPool:
             self.num_threads = os.cpu_count()
 
         self.waiting_jobs = Queue()
-        self.shutdown_event = Event()
+        self.shutdown_trigger = False
         threads = []
 
         for _ in range(self.num_threads):
@@ -26,11 +26,11 @@ class ThreadPool:
     def get_first_waiting_job(self):
         return self.waiting_jobs.get()
     
-    def get_shutdown_event(self):
-        return self.shutdown_event
+    def is_shutdown(self):
+        return self.shutdown_trigger
     
     def set_shutdown_event(self):
-        self.shutdown_event.set()
+        self.shutdown_trigger = True
 
 class TaskRunner(Thread):
     def __init__(self, thread_pool):
@@ -38,7 +38,7 @@ class TaskRunner(Thread):
         self.thread_pool = thread_pool
 
     def run(self):
-        while not self.thread_pool.shutdown_event.is_set():
+        while not self.thread_pool.shutdown_trigger:
             # Get pending job
             job = self.thread_pool.get_first_waiting_job()
             # Execute the job and save the result to disk

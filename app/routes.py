@@ -81,7 +81,7 @@ def get_jobs_info():
 def get_num_jobs():
     logging.info("Received GET request at /api/num_jobs")
 
-    if webserver.tasks_runner.get_shutdown_event().is_set():
+    if webserver.tasks_runner.is_shutdown():
         return jsonify({"num_jobs": 0})
     
     waiting_jobs = webserver.tasks_runner.get_waiting_jobs()

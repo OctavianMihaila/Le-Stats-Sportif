@@ -64,7 +64,9 @@ Le Stats Sportif is a web application designed to provide users with statistics 
 
 ## Resources
 
-- [Course Material](https://ocw.cs.pub.ro/courses/asc/laboratoare/01)
+- [Course Material 01](https://ocw.cs.pub.ro/courses/asc/laboratoare/01)
+- [Course Material 02](https://ocw.cs.pub.ro/courses/asc/laboratoare/02)
+- [Course Material 03](https://ocw.cs.pub.ro/courses/asc/laboratoare/03)
 - [Python Logging Documentation](https://docs.python.org/3/library/logging.html)
 - [Python Unittest Documentation](https://docs.python.org/3/library/unittest.html)
 
