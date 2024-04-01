@@ -1,5 +1,5 @@
 from queue import Queue
-from threading import Thread, Event
+from threading import Thread, Lock
 import os
 import json
 
@@ -13,6 +13,7 @@ class ThreadPool:
 
         self.waiting_jobs = Queue()
         self.shutdown_trigger = False
+        self.queue_lock = Lock()
         threads = []
 
         for _ in range(self.num_threads):
@@ -40,7 +41,9 @@ class TaskRunner(Thread):
     def run(self):
         while not self.thread_pool.shutdown_trigger:
             # Get pending job
+            self.thread_pool.queue_lock.acquire()
             job = self.thread_pool.get_first_waiting_job()
+            self.thread_pool.queue_lock.release()
             # Execute the job and save the result to disk
             results = job.execute()
 
