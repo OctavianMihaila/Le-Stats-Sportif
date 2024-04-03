@@ -50,7 +50,7 @@ Le Stats Sportif is a web application designed to provide users with statistics 
 
 ## Testing
 
-- Unit tests were created to cover the endpoints from `routes.py` that are not covered by the checker. These unit tests are placed in `unittests/TestWebserver.py`.
+- Unit tests were created to cover all the endpoints from `routes.py`. These unit tests are placed in `unittests/TestWebserver.py` and can be run only if the server is running. The tests are run using the `unittest` module from Python.
 
 ## Logging
 

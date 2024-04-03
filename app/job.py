@@ -1,25 +1,34 @@
-from typing import Callable
-import json
-from app import webserver
-import logging
+"""
 
-JobRoutine = Callable[[dict], None] 
+    This contains the Job class and the job routines that will be executed
+    by the threads in order to provide the results for the API requests.
+
+"""
+
+import logging
+from typing import Callable
+from app import webserver
+
+JobRoutine = Callable[[dict], None]
 
 class Job:
+    """
+        Job class that will be used to create jobs that will be executed by the threads.
+    """
     def __init__(self, job_id, job_routine: JobRoutine, request_data):
         self.job_id = job_id
         self.job_routine = job_routine
         self.request_data = request_data
         self.result = None
-        logging.info(f"Job {self.job_id} created successfully. Data: {self.request_data}")
+        logging.info("Job %s created successfully. Data: %s", self.job_id, self.request_data)
 
     def execute(self):
         # Execute the job using the assigned routine
-        logging.info(f"Executing job {self.job_id}, with routine {self.job_routine.__name__}")
+        logging.info("Executing job %s, with routine %s", self.job_id, self.job_routine.__name__)
         self.result = self.job_routine(self.job_id, self.request_data)
-        logging.info(f"Job {self.job_id} executed successfully. "
-             f"Result (first 100 chars): {str(self.result)[:100]}")
-
+        logging.info("Job %s executed successfully. "
+             "Result (first 100 chars): %s", 
+             self.job_id, str(self.result)[:100])
 
         return self.result
 
@@ -40,9 +49,9 @@ def state_mean(job_id, request_data):
 
     # Calculate arithmetic mean for a single state
     for field in data:
-        if (2011 <= int(field['YearStart']) and 
-            int(field['YearEnd']) <= 2022 and 
-            field['LocationDesc'] == target_state and 
+        if (2011 <= int(field['YearStart']) and
+            int(field['YearEnd']) <= 2022 and
+            field['LocationDesc'] == target_state and
             field['Question'] == request_data['question']):
 
             results += float(field['Data_Value'])
@@ -131,10 +140,11 @@ def mean_by_category(job_id, request_data):
         stratificationCategory1 = field['StratificationCategory1']
         state = field['LocationDesc']
 
-        if (field['Question'] == request_data['question'] 
+        if (field['Question'] == request_data['question']
             and stratificationCategory1 != '' and stratification1 != ''):
             # Using a string format like this one ('Alabama', 'Age (years)', '18 - 24') as key.
-            key = '(\'' + state + '\', \'' + stratificationCategory1 + '\', \'' + stratification1 + '\')'
+            key = ('(\'' + state + '\', \'' + stratificationCategory1
+                + '\', \'' + stratification1 + '\')')
             if key not in results:
                 results[key] = float(field['Data_Value'])
                 entries[key] = 1
@@ -182,8 +192,8 @@ def calculate_arithmetic_mean(request_data, data):
     entries = {}
 
     for field in data:
-        if (2011 <= int(field['YearStart']) 
-            and int(field['YearEnd']) <= 2022 
+        if (2011 <= int(field['YearStart'])
+            and int(field['YearEnd']) <= 2022
             and field['Question'] == request_data['question']):
             location_desc = field['LocationDesc']
             if location_desc not in results:
@@ -197,4 +207,3 @@ def calculate_arithmetic_mean(request_data, data):
         results[key] /= entries[key]
 
     return results
-

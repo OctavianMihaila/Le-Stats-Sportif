@@ -1,10 +1,13 @@
+"""
+    This contains the API endpoints that will be used to interact with the webserver.
+"""
+import os
+import json
 import logging
 from flask import request, jsonify
 from app.job import Job, states_mean, state_mean, best5, worst5, global_mean
 from app.job import diff_from_mean, state_diff_from_mean, mean_by_category, state_mean_by_category
 from app import webserver
-import os
-import json
 
 # Example endpoint definition
 @webserver.route('/api/post_endpoint', methods=['POST'])
@@ -19,19 +22,18 @@ def post_endpoint():
 
         # Sending back a JSON response
         return jsonify(response)
-    else:
-        # Method Not Allowed
-        return jsonify({"error": "Method not allowed"}), 405
+
+    return jsonify({"error": "Method not allowed"}), 405
 
 @webserver.route('/api/get_results/<job_id>', methods=['GET'])
 def get_response(job_id):
-    logging.info(f"Received GET request at /api/get_results/{job_id}")
+    logging.info("Received GET request at /api/get_results/%s", job_id)
 
     # Check if job_id is valid
     if int(job_id) > int(webserver.job_counter) or int(job_id) < 1:
-        logging.error(f"Invalid job_id {job_id}")
+        logging.error("Invalid job_id: %s", job_id)
         return {"status": "error", "reason": "Invalid job_id"}
-    
+
     # Check if the job_id is in waiting queue
     is_in_waiting_queue = False
     waiting_queue = webserver.tasks_runner.get_waiting_jobs()
@@ -39,24 +41,25 @@ def get_response(job_id):
         if job.job_id == int(job_id):
             is_in_waiting_queue = True
             break
-    
+
     # Check if the job_id is still running
     if is_in_waiting_queue:
-        logging.info(f"Job {job_id} is still running")
+        logging.info("Job %s is still running", job_id)
         return {"status": "running"}
-    
+
     # Look in results dir to see if the job_id is there. if yes, return the results
     if os.path.exists(f"results/{job_id}"):
         with open(f"results/{job_id}", "r") as f:
             results = f.read()
-            logging.info(f"Job {job_id} is done and results are (first 100 chars):  {results}")
-            
+            logging.info("Job %s is done and results are (first 100 chars): %s",
+                job_id, results[:100])
+
             if results == '':
                 return {"status": "done", "data": {}}
-            else:
-                return {"status": "done", "data": json.loads(results)}
 
-    logging.error(f"Job {job_id} is not in the queue or results")
+            return {"status": "done", "data": json.loads(results)}
+
+    logging.error("Job %s is not in the queue or results", job_id)
 
     return {"status": "error", "reason": "Job has valid job_id but is not in the queue or results."}
 
@@ -74,7 +77,7 @@ def get_jobs_info():
         job_id = file
         if job_id not in result:
             result[job_id] = "done"
-    
+
     return jsonify(result)
 
 @webserver.route('/api/num_jobs', methods=['GET'])
@@ -83,7 +86,7 @@ def get_num_jobs():
 
     if webserver.tasks_runner.is_shutdown():
         return jsonify({"num_jobs": 0})
-    
+
     waiting_jobs = webserver.tasks_runner.get_waiting_jobs()
     num_jobs = len(waiting_jobs.queue)
 
@@ -96,8 +99,8 @@ def states_mean_request():
 
     new_job = Job(webserver.job_counter, states_mean, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
-    logging.info(f"Job {new_job.job_id} was added to the queue")    
-    
+    logging.info("Job %s was added to the queue", new_job.job_id)
+
     webserver.job_counter += 1
 
     return jsonify({"job_id": new_job.job_id})
@@ -109,7 +112,7 @@ def state_mean_request():
 
     new_job = Job(webserver.job_counter, state_mean, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
-    logging.info(f"Job {new_job.job_id} was added to the queue")
+    logging.info("Job %s was added to the queue", new_job.job_id)
 
     webserver.job_counter += 1
 
@@ -122,8 +125,8 @@ def best5_request():
 
     new_job = Job(webserver.job_counter, best5, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
-    logging.info(f"Job {new_job.job_id} was added to the queue")
-    
+    logging.info("Job %s was added to the queue", new_job.job_id)
+
     webserver.job_counter += 1
 
     return jsonify({"job_id": new_job.job_id})
@@ -135,7 +138,7 @@ def worst5_request():
 
     new_job = Job(webserver.job_counter, worst5, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
-    logging.info(f"Job {new_job.job_id} was added to the queue")
+    logging.info("Job %s was added to the queue", new_job.job_id)
 
     webserver.job_counter += 1
 
@@ -148,7 +151,7 @@ def global_mean_request():
 
     new_job = Job(webserver.job_counter, global_mean, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
-    logging.info(f"Job {new_job.job_id} was added to the queue")
+    logging.info("Job %s was added to the queue", new_job.job_id)
 
     webserver.job_counter += 1
 
@@ -161,10 +164,10 @@ def diff_from_mean_request():
 
     new_job = Job(webserver.job_counter, diff_from_mean, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
-    logging.info(f"Job {new_job.job_id} was added to the queue")
+    logging.info("Job %s was added to the queue", new_job.job_id)
 
     webserver.job_counter += 1
-    
+
     return jsonify({"job_id": new_job.job_id})
 
 @webserver.route('/api/state_diff_from_mean', methods=['POST'])
@@ -174,7 +177,7 @@ def state_diff_from_mean_request():
 
     new_job = Job(webserver.job_counter, state_diff_from_mean, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
-    logging.info(f"Job {new_job.job_id} was added to the queue")
+    logging.info("Job %s was added to the queue", new_job.job_id)
     webserver.job_counter += 1
 
     return jsonify({"job_id": new_job.job_id})
@@ -186,7 +189,7 @@ def mean_by_category_request():
 
     new_job = Job(webserver.job_counter, mean_by_category, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
-    logging.info(f"Job {new_job.job_id} was added to the queue")
+    logging.info("Job %s was added to the queue", new_job.job_id)
 
     webserver.job_counter += 1
 
@@ -199,7 +202,7 @@ def state_mean_by_category_request():
 
     new_job = Job(webserver.job_counter, state_mean_by_category, data)
     webserver.tasks_runner.waiting_jobs.put(new_job)
-    logging.info(f"Job {new_job.job_id} was added to the queue")
+    logging.info("Job %s was added to the queue", new_job.job_id)
 
     webserver.job_counter += 1
 
@@ -236,5 +239,5 @@ def handle_shutdown():
     if webserver.tasks_runner is not None:
         webserver.tasks_runner.set_shutdown_event()
         return jsonify({"status": "shutting down"}), 200
-    else:
-        return jsonify({"error": "ThreadPool not active"}), 400
+
+    return jsonify({"error": "ThreadPool not active"}), 400

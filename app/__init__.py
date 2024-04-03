@@ -1,10 +1,9 @@
+import time
+import logging
+from logging.handlers import RotatingFileHandler
 from flask import Flask
 from app.data_ingestor import DataIngestor
 from app.task_runner import ThreadPool
-from queue import Queue
-import logging
-from logging.handlers import RotatingFileHandler
-import time
 
 # Max size of the log file is 256 KB, and we keep 20 backup copies
 handler = RotatingFileHandler('webserver.log', maxBytes=256*256, backupCount=20)
