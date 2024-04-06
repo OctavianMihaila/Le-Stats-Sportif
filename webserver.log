@@ -1,0 +1,512 @@
+2024-04-06 16:12:58,839 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:58,850 - INFO - Job 60 executed successfully. Result (first 100 chars): {'Guam': 44.98666666666667}
+2024-04-06 16:12:58,853 - INFO - Received GET request at /api/get_results/60
+2024-04-06 16:12:58,853 - INFO - Job 60 is done and results are (first 100 chars): {"Guam": 44.98666666666667}
+2024-04-06 16:12:58,854 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "GET /api/get_results/60 HTTP/1.1" 200 -
+2024-04-06 16:12:58,857 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:58,857 - INFO - Job 61 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have an overweight classification', 'state': 'Massachusetts'}
+2024-04-06 16:12:58,858 - INFO - Job 61 was added to the queue
+2024-04-06 16:12:58,858 - INFO - Executing job 61, with routine state_mean
+2024-04-06 16:12:58,858 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:58,870 - INFO - Job 61 executed successfully. Result (first 100 chars): {'Massachusetts': 34.6203125}
+2024-04-06 16:12:58,873 - INFO - Received GET request at /api/get_results/61
+2024-04-06 16:12:58,873 - INFO - Job 61 is done and results are (first 100 chars): {"Massachusetts": 34.6203125}
+2024-04-06 16:12:58,873 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "GET /api/get_results/61 HTTP/1.1" 200 -
+2024-04-06 16:12:58,876 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:58,876 - INFO - Job 62 created successfully. Data: {'question': 'Percent of adults who report consuming vegetables less than one time daily', 'state': 'Maine'}
+2024-04-06 16:12:58,876 - INFO - Job 62 was added to the queue
+2024-04-06 16:12:58,876 - INFO - Executing job 62, with routine state_mean
+2024-04-06 16:12:58,876 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:58,887 - INFO - Job 62 executed successfully. Result (first 100 chars): {'Maine': 14.858823529411765}
+2024-04-06 16:12:58,890 - INFO - Received GET request at /api/get_results/62
+2024-04-06 16:12:58,890 - INFO - Job 62 is done and results are (first 100 chars): {"Maine": 14.858823529411765}
+2024-04-06 16:12:58,891 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "GET /api/get_results/62 HTTP/1.1" 200 -
+2024-04-06 16:12:58,894 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:58,894 - INFO - Job 63 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week', 'state': 'Massachusetts'}
+2024-04-06 16:12:58,894 - INFO - Job 63 was added to the queue
+2024-04-06 16:12:58,894 - INFO - Executing job 63, with routine state_mean
+2024-04-06 16:12:58,894 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:58,904 - INFO - Job 63 executed successfully. Result (first 100 chars): {'Massachusetts': 21.602941176470583}
+2024-04-06 16:12:58,907 - INFO - Received GET request at /api/get_results/63
+2024-04-06 16:12:58,908 - INFO - Job 63 is done and results are (first 100 chars): {"Massachusetts": 21.602941176470583}
+2024-04-06 16:12:58,908 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "GET /api/get_results/63 HTTP/1.1" 200 -
+2024-04-06 16:12:58,911 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:58,911 - INFO - Job 64 created successfully. Data: {'question': 'Percent of adults who report consuming vegetables less than one time daily', 'state': 'National'}
+2024-04-06 16:12:58,911 - INFO - Job 64 was added to the queue
+2024-04-06 16:12:58,911 - INFO - Executing job 64, with routine state_mean
+2024-04-06 16:12:58,912 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:58,922 - INFO - Job 64 executed successfully. Result (first 100 chars): {'National': 20.4}
+2024-04-06 16:12:58,925 - INFO - Received GET request at /api/get_results/64
+2024-04-06 16:12:58,925 - INFO - Job 64 is done and results are (first 100 chars): {"National": 20.4}
+2024-04-06 16:12:58,926 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "GET /api/get_results/64 HTTP/1.1" 200 -
+2024-04-06 16:12:58,929 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:58,930 - INFO - Job 65 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)', 'state': 'National'}
+2024-04-06 16:12:58,930 - INFO - Job 65 was added to the queue
+2024-04-06 16:12:58,930 - INFO - Executing job 65, with routine state_mean
+2024-04-06 16:12:58,930 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:58,941 - INFO - Job 65 executed successfully. Result (first 100 chars): {'National': 48.53214285714285}
+2024-04-06 16:12:58,944 - INFO - Received GET request at /api/get_results/65
+2024-04-06 16:12:58,944 - INFO - Job 65 is done and results are (first 100 chars): {"National": 48.53214285714285}
+2024-04-06 16:12:58,944 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "GET /api/get_results/65 HTTP/1.1" 200 -
+2024-04-06 16:12:58,948 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:58,948 - INFO - Job 66 created successfully. Data: {'question': 'Percent of adults who report consuming vegetables less than one time daily', 'state': 'Guam'}
+2024-04-06 16:12:58,948 - INFO - Job 66 was added to the queue
+2024-04-06 16:12:58,948 - INFO - Executing job 66, with routine state_mean
+2024-04-06 16:12:58,949 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:58,960 - INFO - Job 66 executed successfully. Result (first 100 chars): {'Guam': 26.757142857142856}
+2024-04-06 16:12:58,963 - INFO - Received GET request at /api/get_results/66
+2024-04-06 16:12:58,963 - INFO - Job 66 is done and results are (first 100 chars): {"Guam": 26.757142857142856}
+2024-04-06 16:12:58,963 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "GET /api/get_results/66 HTTP/1.1" 200 -
+2024-04-06 16:12:58,966 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:58,967 - INFO - Job 67 created successfully. Data: {'question': 'Percent of adults who report consuming vegetables less than one time daily', 'state': 'Massachusetts'}
+2024-04-06 16:12:58,967 - INFO - Job 67 was added to the queue
+2024-04-06 16:12:58,967 - INFO - Executing job 67, with routine state_mean
+2024-04-06 16:12:58,967 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:58,990 - INFO - Received GET request at /api/get_results/67
+2024-04-06 16:12:58,990 - INFO - Job 67 executed successfully. Result (first 100 chars): {'Massachusetts': 17.65333333333334}
+2024-04-06 16:12:58,991 - ERROR - Job 67 is not in the queue or results
+2024-04-06 16:12:58,991 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "GET /api/get_results/67 HTTP/1.1" 200 -
+2024-04-06 16:12:58,993 - INFO - Received GET request at /api/get_results/67
+2024-04-06 16:12:58,993 - INFO - Job 67 is done and results are (first 100 chars): {"Massachusetts": 17.65333333333334}
+2024-04-06 16:12:58,993 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "GET /api/get_results/67 HTTP/1.1" 200 -
+2024-04-06 16:12:58,997 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:58,998 - INFO - Job 68 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week', 'state': 'Maine'}
+2024-04-06 16:12:58,998 - INFO - Job 68 was added to the queue
+2024-04-06 16:12:58,998 - INFO - Executing job 68, with routine state_mean
+2024-04-06 16:12:58,998 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:58] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,018 - INFO - Job 68 executed successfully. Result (first 100 chars): {'Maine': 20.14117647058824}
+2024-04-06 16:12:59,021 - INFO - Received GET request at /api/get_results/68
+2024-04-06 16:12:59,021 - INFO - Job 68 is done and results are (first 100 chars): {"Maine": 20.14117647058824}
+2024-04-06 16:12:59,021 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/68 HTTP/1.1" 200 -
+2024-04-06 16:12:59,025 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:59,025 - INFO - Job 69 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week', 'state': 'Guam'}
+2024-04-06 16:12:59,026 - INFO - Job 69 was added to the queue
+2024-04-06 16:12:59,026 - INFO - Executing job 69, with routine state_mean
+2024-04-06 16:12:59,026 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,037 - INFO - Job 69 executed successfully. Result (first 100 chars): {'Guam': 22.104545454545452}
+2024-04-06 16:12:59,040 - INFO - Received GET request at /api/get_results/69
+2024-04-06 16:12:59,040 - INFO - Job 69 is done and results are (first 100 chars): {"Guam": 22.104545454545452}
+2024-04-06 16:12:59,040 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/69 HTTP/1.1" 200 -
+2024-04-06 16:12:59,043 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:59,044 - INFO - Job 70 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)', 'state': 'Massachusetts'}
+2024-04-06 16:12:59,044 - INFO - Job 70 was added to the queue
+2024-04-06 16:12:59,044 - INFO - Executing job 70, with routine state_mean
+2024-04-06 16:12:59,044 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,064 - INFO - Job 70 executed successfully. Result (first 100 chars): {'Massachusetts': 50.9969696969697}
+2024-04-06 16:12:59,067 - INFO - Received GET request at /api/get_results/70
+2024-04-06 16:12:59,067 - INFO - Job 70 is done and results are (first 100 chars): {"Massachusetts": 50.9969696969697}
+2024-04-06 16:12:59,068 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/70 HTTP/1.1" 200 -
+2024-04-06 16:12:59,071 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:59,072 - INFO - Job 71 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)', 'state': 'Maine'}
+2024-04-06 16:12:59,072 - INFO - Job 71 was added to the queue
+2024-04-06 16:12:59,072 - INFO - Executing job 71, with routine state_mean
+2024-04-06 16:12:59,072 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,083 - INFO - Job 71 executed successfully. Result (first 100 chars): {'Maine': 52.446666666666665}
+2024-04-06 16:12:59,086 - INFO - Received GET request at /api/get_results/71
+2024-04-06 16:12:59,086 - INFO - Job 71 is done and results are (first 100 chars): {"Maine": 52.446666666666665}
+2024-04-06 16:12:59,087 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/71 HTTP/1.1" 200 -
+2024-04-06 16:12:59,090 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:59,091 - INFO - Job 72 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)', 'state': 'Massachusetts'}
+2024-04-06 16:12:59,091 - INFO - Job 72 was added to the queue
+2024-04-06 16:12:59,091 - INFO - Executing job 72, with routine state_mean
+2024-04-06 16:12:59,091 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,102 - INFO - Job 72 executed successfully. Result (first 100 chars): {'Massachusetts': 50.9969696969697}
+2024-04-06 16:12:59,105 - INFO - Received GET request at /api/get_results/72
+2024-04-06 16:12:59,105 - INFO - Job 72 is done and results are (first 100 chars): {"Massachusetts": 50.9969696969697}
+2024-04-06 16:12:59,105 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/72 HTTP/1.1" 200 -
+2024-04-06 16:12:59,108 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:59,109 - INFO - Job 73 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have an overweight classification', 'state': 'Maine'}
+2024-04-06 16:12:59,109 - INFO - Job 73 was added to the queue
+2024-04-06 16:12:59,109 - INFO - Executing job 73, with routine state_mean
+2024-04-06 16:12:59,109 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,120 - INFO - Job 73 executed successfully. Result (first 100 chars): {'Maine': 34.31612903225807}
+2024-04-06 16:12:59,123 - INFO - Received GET request at /api/get_results/73
+2024-04-06 16:12:59,123 - INFO - Job 73 is done and results are (first 100 chars): {"Maine": 34.31612903225807}
+2024-04-06 16:12:59,123 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/73 HTTP/1.1" 200 -
+2024-04-06 16:12:59,126 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:59,127 - INFO - Job 74 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)', 'state': 'Guam'}
+2024-04-06 16:12:59,127 - INFO - Job 74 was added to the queue
+2024-04-06 16:12:59,127 - INFO - Executing job 74, with routine state_mean
+2024-04-06 16:12:59,127 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,137 - INFO - Job 74 executed successfully. Result (first 100 chars): {'Guam': 44.98666666666667}
+2024-04-06 16:12:59,140 - INFO - Received GET request at /api/get_results/74
+2024-04-06 16:12:59,140 - INFO - Job 74 is done and results are (first 100 chars): {"Guam": 44.98666666666667}
+2024-04-06 16:12:59,140 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/74 HTTP/1.1" 200 -
+2024-04-06 16:12:59,144 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:59,144 - INFO - Job 75 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have an overweight classification', 'state': 'Guam'}
+2024-04-06 16:12:59,144 - INFO - Job 75 was added to the queue
+2024-04-06 16:12:59,145 - INFO - Executing job 75, with routine state_mean
+2024-04-06 16:12:59,145 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,156 - INFO - Job 75 executed successfully. Result (first 100 chars): {'Guam': 34.485454545454544}
+2024-04-06 16:12:59,158 - INFO - Received GET request at /api/get_results/75
+2024-04-06 16:12:59,158 - INFO - Job 75 is done and results are (first 100 chars): {"Guam": 34.485454545454544}
+2024-04-06 16:12:59,158 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/75 HTTP/1.1" 200 -
+2024-04-06 16:12:59,161 - INFO - Received POST request at /api/state_mean
+2024-04-06 16:12:59,162 - INFO - Job 76 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)', 'state': 'National'}
+2024-04-06 16:12:59,162 - INFO - Job 76 was added to the queue
+2024-04-06 16:12:59,162 - INFO - Executing job 76, with routine state_mean
+2024-04-06 16:12:59,162 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,173 - INFO - Job 76 executed successfully. Result (first 100 chars): {'National': 48.53214285714285}
+2024-04-06 16:12:59,176 - INFO - Received GET request at /api/get_results/76
+2024-04-06 16:12:59,176 - INFO - Job 76 is done and results are (first 100 chars): {"National": 48.53214285714285}
+2024-04-06 16:12:59,176 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/76 HTTP/1.1" 200 -
+2024-04-06 16:12:59,183 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,183 - INFO - Job 77 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have an overweight classification', 'state': 'Wisconsin'}
+2024-04-06 16:12:59,183 - INFO - Job 77 was added to the queue
+2024-04-06 16:12:59,183 - INFO - Executing job 77, with routine state_mean_by_category
+2024-04-06 16:12:59,183 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,193 - INFO - Job 77 executed successfully. Result (first 100 chars): {'Wisconsin': {"('Age (years)', '35 - 44')": 32.86666666666667, "('Age (years)', '18 - 24')": 23.839
+2024-04-06 16:12:59,195 - INFO - Received GET request at /api/get_results/77
+2024-04-06 16:12:59,196 - INFO - Job 77 is done and results are (first 100 chars): {"Wisconsin": {"('Age (years)', '35 - 44')": 32.86666666666667, "('Age (years)', '18 - 24')": 23.839
+2024-04-06 16:12:59,196 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/77 HTTP/1.1" 200 -
+2024-04-06 16:12:59,200 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,200 - INFO - Job 78 created successfully. Data: {'question': 'Percent of adults who report consuming vegetables less than one time daily', 'state': 'Georgia'}
+2024-04-06 16:12:59,201 - INFO - Job 78 was added to the queue
+2024-04-06 16:12:59,201 - INFO - Executing job 78, with routine state_mean_by_category
+2024-04-06 16:12:59,201 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,211 - INFO - Job 78 executed successfully. Result (first 100 chars): {'Georgia': {"('Gender', 'Female')": 16.6, "('Gender', 'Male')": 22.1, "('Race/Ethnicity', 'Non-Hisp
+2024-04-06 16:12:59,213 - INFO - Received GET request at /api/get_results/78
+2024-04-06 16:12:59,214 - INFO - Job 78 is done and results are (first 100 chars): {"Georgia": {"('Gender', 'Female')": 16.6, "('Gender', 'Male')": 22.1, "('Race/Ethnicity', 'Non-Hisp
+2024-04-06 16:12:59,214 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/78 HTTP/1.1" 200 -
+2024-04-06 16:12:59,217 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,218 - INFO - Job 79 created successfully. Data: {'question': 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week', 'state': 'Georgia'}
+2024-04-06 16:12:59,218 - INFO - Job 79 was added to the queue
+2024-04-06 16:12:59,218 - INFO - Executing job 79, with routine state_mean_by_category
+2024-04-06 16:12:59,218 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,225 - INFO - Job 79 executed successfully. Result (first 100 chars): {'Georgia': {"('Race/Ethnicity', 'Other')": 30.9, "('Race/Ethnicity', 'Hawaiian/Pacific Islander')":
+2024-04-06 16:12:59,228 - INFO - Received GET request at /api/get_results/79
+2024-04-06 16:12:59,228 - INFO - Job 79 is done and results are (first 100 chars): {"Georgia": {"('Race/Ethnicity', 'Other')": 30.9, "('Race/Ethnicity', 'Hawaiian/Pacific Islander')":
+2024-04-06 16:12:59,228 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/79 HTTP/1.1" 200 -
+2024-04-06 16:12:59,232 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,232 - INFO - Job 80 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have an overweight classification', 'state': 'Oklahoma'}
+2024-04-06 16:12:59,232 - INFO - Job 80 was added to the queue
+2024-04-06 16:12:59,233 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,233 - INFO - Executing job 80, with routine state_mean_by_category
+2024-04-06 16:12:59,239 - INFO - Job 80 executed successfully. Result (first 100 chars): {'Oklahoma': {"('Race/Ethnicity', 'Non-Hispanic White')": 35.650000000000006, "('Age (years)', '45 -
+2024-04-06 16:12:59,240 - INFO - Received GET request at /api/get_results/80
+2024-04-06 16:12:59,241 - INFO - Job 80 is done and results are (first 100 chars): {"Oklahoma": {"('Race/Ethnicity', 'Non-Hispanic White')": 35.650000000000006, "('Age (years)', '45 -
+2024-04-06 16:12:59,241 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/80 HTTP/1.1" 200 -
+2024-04-06 16:12:59,246 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,247 - INFO - Job 81 created successfully. Data: {'question': 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week', 'state': 'Connecticut'}
+2024-04-06 16:12:59,247 - INFO - Job 81 was added to the queue
+2024-04-06 16:12:59,247 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,247 - INFO - Executing job 81, with routine state_mean_by_category
+2024-04-06 16:12:59,254 - INFO - Job 81 executed successfully. Result (first 100 chars): {'Connecticut': {"('Income', '$25,000 - $34,999')": 29.05, "('Gender', 'Female')": 32.15000000000000
+2024-04-06 16:12:59,256 - INFO - Received GET request at /api/get_results/81
+2024-04-06 16:12:59,257 - INFO - Job 81 is done and results are (first 100 chars): {"Connecticut": {"('Income', '$25,000 - $34,999')": 29.05, "('Gender', 'Female')": 32.15000000000000
+2024-04-06 16:12:59,257 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/81 HTTP/1.1" 200 -
+2024-04-06 16:12:59,260 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,261 - INFO - Job 82 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week', 'state': 'Wisconsin'}
+2024-04-06 16:12:59,261 - INFO - Job 82 was added to the queue
+2024-04-06 16:12:59,261 - INFO - Executing job 82, with routine state_mean_by_category
+2024-04-06 16:12:59,261 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,268 - INFO - Job 82 executed successfully. Result (first 100 chars): {'Wisconsin': {"('Race/Ethnicity', '2 or more races')": 23.65, "('Age (years)', '18 - 24')": 25.3, "
+2024-04-06 16:12:59,271 - INFO - Received GET request at /api/get_results/82
+2024-04-06 16:12:59,271 - INFO - Job 82 is done and results are (first 100 chars): {"Wisconsin": {"('Race/Ethnicity', '2 or more races')": 23.65, "('Age (years)', '18 - 24')": 25.3, "
+2024-04-06 16:12:59,272 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/82 HTTP/1.1" 200 -
+2024-04-06 16:12:59,275 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,275 - INFO - Job 83 created successfully. Data: {'question': 'Percent of adults who report consuming vegetables less than one time daily', 'state': 'Connecticut'}
+2024-04-06 16:12:59,276 - INFO - Job 83 was added to the queue
+2024-04-06 16:12:59,276 - INFO - Executing job 83, with routine state_mean_by_category
+2024-04-06 16:12:59,276 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,286 - INFO - Job 83 executed successfully. Result (first 100 chars): {'Connecticut': {"('Race/Ethnicity', '2 or more races')": 17.4, "('Race/Ethnicity', 'Other')": 20.9,
+2024-04-06 16:12:59,289 - INFO - Received GET request at /api/get_results/83
+2024-04-06 16:12:59,289 - INFO - Job 83 is done and results are (first 100 chars): {"Connecticut": {"('Race/Ethnicity', '2 or more races')": 17.4, "('Race/Ethnicity', 'Other')": 20.9,
+2024-04-06 16:12:59,289 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/83 HTTP/1.1" 200 -
+2024-04-06 16:12:59,293 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,293 - INFO - Job 84 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week', 'state': 'Georgia'}
+2024-04-06 16:12:59,294 - INFO - Job 84 was added to the queue
+2024-04-06 16:12:59,294 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,294 - INFO - Executing job 84, with routine state_mean_by_category
+2024-04-06 16:12:59,301 - INFO - Job 84 executed successfully. Result (first 100 chars): {'Georgia': {"('Education', 'Less than high school')": 11.4, "('Age (years)', '18 - 24')": 27.9, "('
+2024-04-06 16:12:59,302 - INFO - Received GET request at /api/get_results/84
+2024-04-06 16:12:59,302 - INFO - Job 84 is done and results are (first 100 chars): {"Georgia": {"('Education', 'Less than high school')": 11.4, "('Age (years)', '18 - 24')": 27.9, "('
+2024-04-06 16:12:59,302 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/84 HTTP/1.1" 200 -
+2024-04-06 16:12:59,306 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,306 - INFO - Job 85 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have an overweight classification', 'state': 'Georgia'}
+2024-04-06 16:12:59,307 - INFO - Job 85 was added to the queue
+2024-04-06 16:12:59,307 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,307 - INFO - Executing job 85, with routine state_mean_by_category
+2024-04-06 16:12:59,313 - INFO - Received GET request at /api/get_results/85
+2024-04-06 16:12:59,314 - INFO - Job 85 executed successfully. Result (first 100 chars): {'Georgia': {"('Age (years)', '35 - 44')": 37.2, "('Income', '$75,000 or greater')": 38.06, "('Age (
+2024-04-06 16:12:59,314 - ERROR - Job 85 is not in the queue or results
+2024-04-06 16:12:59,315 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/85 HTTP/1.1" 200 -
+2024-04-06 16:12:59,317 - INFO - Received GET request at /api/get_results/85
+2024-04-06 16:12:59,317 - INFO - Job 85 is done and results are (first 100 chars): {"Georgia": {"('Age (years)', '35 - 44')": 37.2, "('Income', '$75,000 or greater')": 38.06, "('Age (
+2024-04-06 16:12:59,317 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/85 HTTP/1.1" 200 -
+2024-04-06 16:12:59,322 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,322 - INFO - Job 86 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week', 'state': 'Oklahoma'}
+2024-04-06 16:12:59,322 - INFO - Job 86 was added to the queue
+2024-04-06 16:12:59,322 - INFO - Executing job 86, with routine state_mean_by_category
+2024-04-06 16:12:59,323 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,329 - INFO - Job 86 executed successfully. Result (first 100 chars): {'Oklahoma': {"('Age (years)', '35 - 44')": 16.23333333333333, "('Education', 'Some college or techn
+2024-04-06 16:12:59,332 - INFO - Received GET request at /api/get_results/86
+2024-04-06 16:12:59,332 - INFO - Job 86 is done and results are (first 100 chars): {"Oklahoma": {"('Age (years)', '35 - 44')": 16.23333333333333, "('Education', 'Some college or techn
+2024-04-06 16:12:59,332 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/86 HTTP/1.1" 200 -
+2024-04-06 16:12:59,336 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,337 - INFO - Job 87 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week', 'state': 'Connecticut'}
+2024-04-06 16:12:59,337 - INFO - Job 87 was added to the queue
+2024-04-06 16:12:59,337 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,337 - INFO - Executing job 87, with routine state_mean_by_category
+2024-04-06 16:12:59,344 - INFO - Received GET request at /api/get_results/87
+2024-04-06 16:12:59,344 - ERROR - Job 87 is not in the queue or results
+2024-04-06 16:12:59,344 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/87 HTTP/1.1" 200 -
+2024-04-06 16:12:59,345 - INFO - Job 87 executed successfully. Result (first 100 chars): {'Connecticut': {"('Income', 'Less than $15,000')": 15.7, "('Race/Ethnicity', 'Hispanic')": 17.0, "(
+2024-04-06 16:12:59,347 - INFO - Received GET request at /api/get_results/87
+2024-04-06 16:12:59,347 - INFO - Job 87 is done and results are (first 100 chars): {"Connecticut": {"('Income', 'Less than $15,000')": 15.7, "('Race/Ethnicity', 'Hispanic')": 17.0, "(
+2024-04-06 16:12:59,348 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/87 HTTP/1.1" 200 -
+2024-04-06 16:12:59,352 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,353 - INFO - Job 88 created successfully. Data: {'question': 'Percent of adults who report consuming vegetables less than one time daily', 'state': 'Wisconsin'}
+2024-04-06 16:12:59,353 - INFO - Job 88 was added to the queue
+2024-04-06 16:12:59,353 - INFO - Executing job 88, with routine state_mean_by_category
+2024-04-06 16:12:59,354 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,359 - INFO - Job 88 executed successfully. Result (first 100 chars): {'Wisconsin': {"('Race/Ethnicity', 'Other')": 21.4, "('Race/Ethnicity', 'Hawaiian/Pacific Islander')
+2024-04-06 16:12:59,362 - INFO - Received GET request at /api/get_results/88
+2024-04-06 16:12:59,362 - INFO - Job 88 is done and results are (first 100 chars): {"Wisconsin": {"('Race/Ethnicity', 'Other')": 21.4, "('Race/Ethnicity', 'Hawaiian/Pacific Islander')
+2024-04-06 16:12:59,362 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/88 HTTP/1.1" 200 -
+2024-04-06 16:12:59,366 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,367 - INFO - Job 89 created successfully. Data: {'question': 'Percent of adults who report consuming vegetables less than one time daily', 'state': 'Oklahoma'}
+2024-04-06 16:12:59,367 - INFO - Job 89 was added to the queue
+2024-04-06 16:12:59,367 - INFO - Executing job 89, with routine state_mean_by_category
+2024-04-06 16:12:59,368 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,374 - INFO - Job 89 executed successfully. Result (first 100 chars): {'Oklahoma': {"('Education', 'Some college or technical school')": 17.05, "('Total', 'Total')": 21.1
+2024-04-06 16:12:59,377 - INFO - Received GET request at /api/get_results/89
+2024-04-06 16:12:59,377 - INFO - Job 89 is done and results are (first 100 chars): {"Oklahoma": {"('Education', 'Some college or technical school')": 17.05, "('Total', 'Total')": 21.1
+2024-04-06 16:12:59,377 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/89 HTTP/1.1" 200 -
+2024-04-06 16:12:59,382 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,382 - INFO - Job 90 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have obesity', 'state': 'Connecticut'}
+2024-04-06 16:12:59,382 - INFO - Job 90 was added to the queue
+2024-04-06 16:12:59,382 - INFO - Executing job 90, with routine state_mean_by_category
+2024-04-06 16:12:59,383 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,389 - INFO - Job 90 executed successfully. Result (first 100 chars): {'Connecticut': {"('Age (years)', '55 - 64')": 30.0, "('Age (years)', '65 or older')": 26.0666666666
+2024-04-06 16:12:59,393 - INFO - Received GET request at /api/get_results/90
+2024-04-06 16:12:59,393 - INFO - Job 90 is done and results are (first 100 chars): {"Connecticut": {"('Age (years)', '55 - 64')": 30.0, "('Age (years)', '65 or older')": 26.0666666666
+2024-04-06 16:12:59,393 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/90 HTTP/1.1" 200 -
+2024-04-06 16:12:59,398 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,399 - INFO - Job 91 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have obesity', 'state': 'Wisconsin'}
+2024-04-06 16:12:59,399 - INFO - Job 91 was added to the queue
+2024-04-06 16:12:59,399 - INFO - Executing job 91, with routine state_mean_by_category
+2024-04-06 16:12:59,399 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,408 - INFO - Job 91 executed successfully. Result (first 100 chars): {'Wisconsin': {"('Income', '$50,000 - $74,999')": 30.26666666666667, "('Race/Ethnicity', 'Hawaiian/P
+2024-04-06 16:12:59,412 - INFO - Received GET request at /api/get_results/91
+2024-04-06 16:12:59,412 - INFO - Job 91 is done and results are (first 100 chars): {"Wisconsin": {"('Income', '$50,000 - $74,999')": 30.26666666666667, "('Race/Ethnicity', 'Hawaiian/P
+2024-04-06 16:12:59,413 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/91 HTTP/1.1" 200 -
+2024-04-06 16:12:59,418 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,419 - INFO - Job 92 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have an overweight classification', 'state': 'Connecticut'}
+2024-04-06 16:12:59,419 - INFO - Job 92 was added to the queue
+2024-04-06 16:12:59,419 - INFO - Executing job 92, with routine state_mean_by_category
+2024-04-06 16:12:59,419 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,429 - INFO - Job 92 executed successfully. Result (first 100 chars): {'Connecticut': {"('Race/Ethnicity', '2 or more races')": 39.53333333333333, "('Education', 'Some co
+2024-04-06 16:12:59,432 - INFO - Received GET request at /api/get_results/92
+2024-04-06 16:12:59,432 - INFO - Job 92 is done and results are (first 100 chars): {"Connecticut": {"('Race/Ethnicity', '2 or more races')": 39.53333333333333, "('Education', 'Some co
+2024-04-06 16:12:59,433 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/92 HTTP/1.1" 200 -
+2024-04-06 16:12:59,438 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,439 - INFO - Job 93 created successfully. Data: {'question': 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week', 'state': 'Wisconsin'}
+2024-04-06 16:12:59,439 - INFO - Job 93 was added to the queue
+2024-04-06 16:12:59,439 - INFO - Executing job 93, with routine state_mean_by_category
+2024-04-06 16:12:59,439 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,445 - INFO - Job 93 executed successfully. Result (first 100 chars): {'Wisconsin': {"('Income', '$75,000 or greater')": 33.7, "('Race/Ethnicity', 'Hispanic')": 32.8, "('
+2024-04-06 16:12:59,448 - INFO - Received GET request at /api/get_results/93
+2024-04-06 16:12:59,449 - INFO - Job 93 is done and results are (first 100 chars): {"Wisconsin": {"('Income', '$75,000 or greater')": 33.7, "('Race/Ethnicity', 'Hispanic')": 32.8, "('
+2024-04-06 16:12:59,449 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/93 HTTP/1.1" 200 -
+2024-04-06 16:12:59,454 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,455 - INFO - Job 94 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have obesity', 'state': 'Oklahoma'}
+2024-04-06 16:12:59,455 - INFO - Job 94 was added to the queue
+2024-04-06 16:12:59,455 - INFO - Executing job 94, with routine state_mean_by_category
+2024-04-06 16:12:59,455 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,461 - INFO - Job 94 executed successfully. Result (first 100 chars): {'Oklahoma': {"('Race/Ethnicity', 'American Indian/Alaska Native')": 43.32000000000001, "('Education
+2024-04-06 16:12:59,465 - INFO - Received GET request at /api/get_results/94
+2024-04-06 16:12:59,465 - INFO - Job 94 is done and results are (first 100 chars): {"Oklahoma": {"('Race/Ethnicity', 'American Indian/Alaska Native')": 43.32000000000001, "('Education
+2024-04-06 16:12:59,465 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/94 HTTP/1.1" 200 -
+2024-04-06 16:12:59,469 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,469 - INFO - Job 95 created successfully. Data: {'question': 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week', 'state': 'Oklahoma'}
+2024-04-06 16:12:59,469 - INFO - Job 95 was added to the queue
+2024-04-06 16:12:59,470 - INFO - Executing job 95, with routine state_mean_by_category
+2024-04-06 16:12:59,470 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,477 - INFO - Job 95 executed successfully. Result (first 100 chars): {'Oklahoma': {"('Age (years)', '18 - 24')": 40.2, "('Total', 'Total')": 25.25, "('Income', '$15,000 
+2024-04-06 16:12:59,479 - INFO - Received GET request at /api/get_results/95
+2024-04-06 16:12:59,480 - INFO - Job 95 is done and results are (first 100 chars): {"Oklahoma": {"('Age (years)', '18 - 24')": 40.2, "('Total', 'Total')": 25.25, "('Income', '$15,000 
+2024-04-06 16:12:59,480 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/95 HTTP/1.1" 200 -
+2024-04-06 16:12:59,484 - INFO - Received POST request at /api/state_mean_by_category
+2024-04-06 16:12:59,484 - INFO - Job 96 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have obesity', 'state': 'Georgia'}
+2024-04-06 16:12:59,484 - INFO - Job 96 was added to the queue
+2024-04-06 16:12:59,484 - INFO - Executing job 96, with routine state_mean_by_category
+2024-04-06 16:12:59,484 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/state_mean_by_category HTTP/1.1" 200 -
+2024-04-06 16:12:59,490 - INFO - Job 96 executed successfully. Result (first 100 chars): {'Georgia': {"('Education', 'High school graduate')": 32.275, "('Income', '$75,000 or greater')": 31
+2024-04-06 16:12:59,493 - INFO - Received GET request at /api/get_results/96
+2024-04-06 16:12:59,494 - INFO - Job 96 is done and results are (first 100 chars): {"Georgia": {"('Education', 'High school graduate')": 32.275, "('Income', '$75,000 or greater')": 31
+2024-04-06 16:12:59,494 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/96 HTTP/1.1" 200 -
+2024-04-06 16:12:59,503 - INFO - Received POST request at /api/states_mean
+2024-04-06 16:12:59,503 - INFO - Job 97 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have obesity'}
+2024-04-06 16:12:59,503 - INFO - Job 97 was added to the queue
+2024-04-06 16:12:59,503 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/states_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,503 - INFO - Executing job 97, with routine states_mean
+2024-04-06 16:12:59,515 - INFO - Received GET request at /api/get_results/97
+2024-04-06 16:12:59,515 - ERROR - Job 97 is not in the queue or results
+2024-04-06 16:12:59,518 - INFO - Job 97 executed successfully. Result (first 100 chars): {'Colorado': 23.071428571428566, 'New Jersey': 25.45178571428571, 'District of Columbia': 25.5414285
+2024-04-06 16:12:59,518 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/97 HTTP/1.1" 200 -
+2024-04-06 16:12:59,521 - INFO - Received GET request at /api/get_results/97
+2024-04-06 16:12:59,521 - INFO - Job 97 is done and results are (first 100 chars): {"Colorado": 23.071428571428566, "New Jersey": 25.45178571428571, "District of Columbia": 25.5414285
+2024-04-06 16:12:59,521 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/97 HTTP/1.1" 200 -
+2024-04-06 16:12:59,526 - INFO - Received POST request at /api/states_mean
+2024-04-06 16:12:59,526 - INFO - Job 98 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have an overweight classification'}
+2024-04-06 16:12:59,526 - INFO - Job 98 was added to the queue
+2024-04-06 16:12:59,526 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/states_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,527 - INFO - Executing job 98, with routine states_mean
+2024-04-06 16:12:59,540 - INFO - Job 98 executed successfully. Result (first 100 chars): {'District of Columbia': 30.746875, 'Missouri': 32.76268656716418, 'Arkansas': 32.99516129032258, 'K
+2024-04-06 16:12:59,541 - INFO - Received GET request at /api/get_results/98
+2024-04-06 16:12:59,541 - INFO - Job 98 is done and results are (first 100 chars): {"District of Columbia": 30.746875, "Missouri": 32.76268656716418, "Arkansas": 32.99516129032258, "K
+2024-04-06 16:12:59,542 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/98 HTTP/1.1" 200 -
+2024-04-06 16:12:59,546 - INFO - Received POST request at /api/states_mean
+2024-04-06 16:12:59,547 - INFO - Job 99 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'}
+2024-04-06 16:12:59,547 - INFO - Job 99 was added to the queue
+2024-04-06 16:12:59,547 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/states_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,547 - INFO - Executing job 99, with routine states_mean
+2024-04-06 16:12:59,559 - INFO - Received GET request at /api/get_results/99
+2024-04-06 16:12:59,559 - ERROR - Job 99 is not in the queue or results
+2024-04-06 16:12:59,559 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/99 HTTP/1.1" 200 -
+2024-04-06 16:12:59,562 - INFO - Job 99 executed successfully. Result (first 100 chars): {'Puerto Rico': 9.90909090909091, 'Mississippi': 15.505714285714287, 'West Virginia': 15.73333333333
+2024-04-06 16:12:59,563 - INFO - Received GET request at /api/get_results/99
+2024-04-06 16:12:59,564 - INFO - Job 99 is done and results are (first 100 chars): {"Puerto Rico": 9.90909090909091, "Mississippi": 15.505714285714287, "West Virginia": 15.73333333333
+2024-04-06 16:12:59,564 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/99 HTTP/1.1" 200 -
+2024-04-06 16:12:59,568 - INFO - Received POST request at /api/states_mean
+2024-04-06 16:12:59,568 - INFO - Job 100 created successfully. Data: {'question': 'Percent of adults who report consuming vegetables less than one time daily'}
+2024-04-06 16:12:59,568 - INFO - Job 100 was added to the queue
+2024-04-06 16:12:59,568 - INFO - Executing job 100, with routine states_mean
+2024-04-06 16:12:59,569 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/states_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,580 - INFO - Job 100 executed successfully. Result (first 100 chars): {'Maine': 14.858823529411765, 'Vermont': 16.045454545454543, 'New Hampshire': 16.938888888888883, 'M
+2024-04-06 16:12:59,583 - INFO - Received GET request at /api/get_results/100
+2024-04-06 16:12:59,583 - INFO - Job 100 is done and results are (first 100 chars): {"Maine": 14.858823529411765, "Vermont": 16.045454545454543, "New Hampshire": 16.938888888888883, "M
+2024-04-06 16:12:59,583 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/100 HTTP/1.1" 200 -
+2024-04-06 16:12:59,587 - INFO - Received POST request at /api/states_mean
+2024-04-06 16:12:59,588 - INFO - Job 101 created successfully. Data: {'question': 'Percent of adults who engage in no leisure-time physical activity'}
+2024-04-06 16:12:59,588 - INFO - Job 101 was added to the queue
+2024-04-06 16:12:59,588 - INFO - Executing job 101, with routine states_mean
+2024-04-06 16:12:59,588 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/states_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,601 - INFO - Job 101 executed successfully. Result (first 100 chars): {'Colorado': 19.366666666666667, 'Oregon': 20.95616438356164, 'California': 21.071014492753626, 'Was
+2024-04-06 16:12:59,603 - INFO - Received GET request at /api/get_results/101
+2024-04-06 16:12:59,603 - INFO - Job 101 is done and results are (first 100 chars): {"Colorado": 19.366666666666667, "Oregon": 20.95616438356164, "California": 21.071014492753626, "Was
+2024-04-06 16:12:59,603 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/101 HTTP/1.1" 200 -
+2024-04-06 16:12:59,607 - INFO - Received POST request at /api/states_mean
+2024-04-06 16:12:59,608 - INFO - Job 102 created successfully. Data: {'question': 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'}
+2024-04-06 16:12:59,608 - INFO - Job 102 was added to the queue
+2024-04-06 16:12:59,608 - INFO - Executing job 102, with routine states_mean
+2024-04-06 16:12:59,609 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/states_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,620 - INFO - Job 102 executed successfully. Result (first 100 chars): {'Puerto Rico': 14.778571428571428, 'West Virginia': 24.041379310344826, 'Oklahoma': 25.930769230769
+2024-04-06 16:12:59,622 - INFO - Received GET request at /api/get_results/102
+2024-04-06 16:12:59,623 - INFO - Job 102 is done and results are (first 100 chars): {"Puerto Rico": 14.778571428571428, "West Virginia": 24.041379310344826, "Oklahoma": 25.930769230769
+2024-04-06 16:12:59,623 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/102 HTTP/1.1" 200 -
+2024-04-06 16:12:59,627 - INFO - Received POST request at /api/states_mean
+2024-04-06 16:12:59,628 - INFO - Job 103 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'}
+2024-04-06 16:12:59,628 - INFO - Job 103 was added to the queue
+2024-04-06 16:12:59,628 - INFO - Executing job 103, with routine states_mean
+2024-04-06 16:12:59,628 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/states_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,652 - INFO - Job 103 executed successfully. Result (first 100 chars): {'Puerto Rico': 37.32000000000001, 'Mississippi': 42.52333333333332, 'Tennessee': 42.82592592592592,
+2024-04-06 16:12:59,654 - INFO - Received GET request at /api/get_results/103
+2024-04-06 16:12:59,654 - INFO - Job 103 is done and results are (first 100 chars): {"Puerto Rico": 37.32000000000001, "Mississippi": 42.52333333333332, "Tennessee": 42.82592592592592,
+2024-04-06 16:12:59,655 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/103 HTTP/1.1" 200 -
+2024-04-06 16:12:59,659 - INFO - Received POST request at /api/states_mean
+2024-04-06 16:12:59,660 - INFO - Job 104 created successfully. Data: {'question': 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'}
+2024-04-06 16:12:59,660 - INFO - Job 104 was added to the queue
+2024-04-06 16:12:59,660 - INFO - Executing job 104, with routine states_mean
+2024-04-06 16:12:59,660 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/states_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,683 - INFO - Received GET request at /api/get_results/104
+2024-04-06 16:12:59,685 - INFO - Job 104 executed successfully. Result (first 100 chars): {'Puerto Rico': 17.875, 'Mississippi': 23.83225806451613, 'Texas': 25.108695652173914, 'Oklahoma': 2
+2024-04-06 16:12:59,685 - ERROR - Job 104 is not in the queue or results
+2024-04-06 16:12:59,686 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/104 HTTP/1.1" 200 -
+2024-04-06 16:12:59,688 - INFO - Received GET request at /api/get_results/104
+2024-04-06 16:12:59,688 - INFO - Job 104 is done and results are (first 100 chars): {"Puerto Rico": 17.875, "Mississippi": 23.83225806451613, "Texas": 25.108695652173914, "Oklahoma": 2
+2024-04-06 16:12:59,689 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/104 HTTP/1.1" 200 -
+2024-04-06 16:12:59,693 - INFO - Received POST request at /api/states_mean
+2024-04-06 16:12:59,693 - INFO - Job 105 created successfully. Data: {'question': 'Percent of adults who report consuming fruit less than one time daily'}
+2024-04-06 16:12:59,693 - INFO - Job 105 was added to the queue
+2024-04-06 16:12:59,693 - INFO - Executing job 105, with routine states_mean
+2024-04-06 16:12:59,693 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/states_mean HTTP/1.1" 200 -
+2024-04-06 16:12:59,705 - INFO - Job 105 executed successfully. Result (first 100 chars): {'Vermont': 34.39411764705882, 'Massachusetts': 34.42, 'Connecticut': 35.276923076923076, 'District 
+2024-04-06 16:12:59,709 - INFO - Received GET request at /api/get_results/105
+2024-04-06 16:12:59,709 - INFO - Job 105 is done and results are (first 100 chars): {"Vermont": 34.39411764705882, "Massachusetts": 34.42, "Connecticut": 35.276923076923076, "District 
+2024-04-06 16:12:59,709 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/105 HTTP/1.1" 200 -
+2024-04-06 16:12:59,716 - INFO - Received POST request at /api/worst5
+2024-04-06 16:12:59,717 - INFO - Job 106 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have obesity'}
+2024-04-06 16:12:59,717 - INFO - Job 106 was added to the queue
+2024-04-06 16:12:59,717 - INFO - Executing job 106, with routine worst5
+2024-04-06 16:12:59,717 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/worst5 HTTP/1.1" 200 -
+2024-04-06 16:12:59,729 - INFO - Job 106 executed successfully. Result (first 100 chars): {'West Virginia': 36.80000000000001, 'Mississippi': 36.50694444444445, 'Louisiana': 36.2661971830985
+2024-04-06 16:12:59,731 - INFO - Received GET request at /api/get_results/106
+2024-04-06 16:12:59,731 - INFO - Job 106 is done and results are (first 100 chars): {"West Virginia": 36.80000000000001, "Mississippi": 36.50694444444445, "Louisiana": 36.2661971830985
+2024-04-06 16:12:59,731 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/106 HTTP/1.1" 200 -
+2024-04-06 16:12:59,734 - INFO - Received POST request at /api/worst5
+2024-04-06 16:12:59,735 - INFO - Job 107 created successfully. Data: {'question': 'Percent of adults aged 18 years and older who have an overweight classification'}
+2024-04-06 16:12:59,735 - INFO - Job 107 was added to the queue
+2024-04-06 16:12:59,735 - INFO - Executing job 107, with routine worst5
+2024-04-06 16:12:59,735 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/worst5 HTTP/1.1" 200 -
+2024-04-06 16:12:59,748 - INFO - Job 107 executed successfully. Result (first 100 chars): {'Puerto Rico': 36.98636363636363, 'Nevada': 36.358333333333334, 'Montana': 36.17826086956522, 'New 
+2024-04-06 16:12:59,751 - INFO - Received GET request at /api/get_results/107
+2024-04-06 16:12:59,751 - INFO - Job 107 is done and results are (first 100 chars): {"Puerto Rico": 36.98636363636363, "Nevada": 36.358333333333334, "Montana": 36.17826086956522, "New 
+2024-04-06 16:12:59,751 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/107 HTTP/1.1" 200 -
+2024-04-06 16:12:59,754 - INFO - Received POST request at /api/worst5
+2024-04-06 16:12:59,755 - INFO - Job 108 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week'}
+2024-04-06 16:12:59,755 - INFO - Job 108 was added to the queue
+2024-04-06 16:12:59,755 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/worst5 HTTP/1.1" 200 -
+2024-04-06 16:12:59,755 - INFO - Executing job 108, with routine worst5
+2024-04-06 16:12:59,762 - INFO - Received GET request at /api/get_results/108
+2024-04-06 16:12:59,769 - INFO - Job 108 executed successfully. Result (first 100 chars): {'Puerto Rico': 9.90909090909091, 'Mississippi': 15.505714285714287, 'West Virginia': 15.73333333333
+2024-04-06 16:12:59,769 - ERROR - Job 108 is not in the queue or results
+2024-04-06 16:12:59,770 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/108 HTTP/1.1" 200 -
+2024-04-06 16:12:59,772 - INFO - Received GET request at /api/get_results/108
+2024-04-06 16:12:59,772 - INFO - Job 108 is done and results are (first 100 chars): {"Puerto Rico": 9.90909090909091, "Mississippi": 15.505714285714287, "West Virginia": 15.73333333333
+2024-04-06 16:12:59,773 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/108 HTTP/1.1" 200 -
+2024-04-06 16:12:59,776 - INFO - Received POST request at /api/worst5
+2024-04-06 16:12:59,776 - INFO - Job 109 created successfully. Data: {'question': 'Percent of adults who report consuming vegetables less than one time daily'}
+2024-04-06 16:12:59,776 - INFO - Job 109 was added to the queue
+2024-04-06 16:12:59,777 - INFO - Executing job 109, with routine worst5
+2024-04-06 16:12:59,777 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/worst5 HTTP/1.1" 200 -
+2024-04-06 16:12:59,789 - INFO - Job 109 executed successfully. Result (first 100 chars): {'Puerto Rico': 39.89, 'Virgin Islands': 27.26428571428571, 'Guam': 26.757142857142856, 'New Mexico'
+2024-04-06 16:12:59,791 - INFO - Received GET request at /api/get_results/109
+2024-04-06 16:12:59,791 - INFO - Job 109 is done and results are (first 100 chars): {"Puerto Rico": 39.89, "Virgin Islands": 27.26428571428571, "Guam": 26.757142857142856, "New Mexico"
+2024-04-06 16:12:59,791 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/109 HTTP/1.1" 200 -
+2024-04-06 16:12:59,795 - INFO - Received POST request at /api/worst5
+2024-04-06 16:12:59,795 - INFO - Job 110 created successfully. Data: {'question': 'Percent of adults who engage in no leisure-time physical activity'}
+2024-04-06 16:12:59,795 - INFO - Job 110 was added to the queue
+2024-04-06 16:12:59,795 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/worst5 HTTP/1.1" 200 -
+2024-04-06 16:12:59,795 - INFO - Executing job 110, with routine worst5
+2024-04-06 16:12:59,808 - INFO - Job 110 executed successfully. Result (first 100 chars): {'Puerto Rico': 40.62749999999999, 'Kentucky': 31.028169014084494, 'Arkansas': 30.601694915254228, '
+2024-04-06 16:12:59,809 - INFO - Received GET request at /api/get_results/110
+2024-04-06 16:12:59,809 - INFO - Job 110 is done and results are (first 100 chars): {"Puerto Rico": 40.62749999999999, "Kentucky": 31.028169014084494, "Arkansas": 30.601694915254228, "
+2024-04-06 16:12:59,810 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/110 HTTP/1.1" 200 -
+2024-04-06 16:12:59,812 - INFO - Received POST request at /api/worst5
+2024-04-06 16:12:59,813 - INFO - Job 111 created successfully. Data: {'question': 'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week'}
+2024-04-06 16:12:59,813 - INFO - Job 111 was added to the queue
+2024-04-06 16:12:59,813 - INFO - Executing job 111, with routine worst5
+2024-04-06 16:12:59,814 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/worst5 HTTP/1.1" 200 -
+2024-04-06 16:12:59,835 - INFO - Job 111 executed successfully. Result (first 100 chars): {'Puerto Rico': 14.778571428571428, 'West Virginia': 24.041379310344826, 'Oklahoma': 25.930769230769
+2024-04-06 16:12:59,837 - INFO - Received GET request at /api/get_results/111
+2024-04-06 16:12:59,838 - INFO - Job 111 is done and results are (first 100 chars): {"Puerto Rico": 14.778571428571428, "West Virginia": 24.041379310344826, "Oklahoma": 25.930769230769
+2024-04-06 16:12:59,838 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/111 HTTP/1.1" 200 -
+2024-04-06 16:12:59,841 - INFO - Received POST request at /api/worst5
+2024-04-06 16:12:59,841 - INFO - Job 112 created successfully. Data: {'question': 'Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'}
+2024-04-06 16:12:59,841 - INFO - Job 112 was added to the queue
+2024-04-06 16:12:59,841 - INFO - Executing job 112, with routine worst5
+2024-04-06 16:12:59,841 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/worst5 HTTP/1.1" 200 -
+2024-04-06 16:12:59,853 - INFO - Job 112 executed successfully. Result (first 100 chars): {'Puerto Rico': 37.32000000000001, 'Mississippi': 42.52333333333332, 'Tennessee': 42.82592592592592,
+2024-04-06 16:12:59,857 - INFO - Received GET request at /api/get_results/112
+2024-04-06 16:12:59,857 - INFO - Job 112 is done and results are (first 100 chars): {"Puerto Rico": 37.32000000000001, "Mississippi": 42.52333333333332, "Tennessee": 42.82592592592592,
+2024-04-06 16:12:59,858 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/112 HTTP/1.1" 200 -
+2024-04-06 16:12:59,862 - INFO - Received POST request at /api/worst5
+2024-04-06 16:12:59,862 - INFO - Job 113 created successfully. Data: {'question': 'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)'}
+2024-04-06 16:12:59,862 - INFO - Job 113 was added to the queue
+2024-04-06 16:12:59,862 - INFO - Executing job 113, with routine worst5
+2024-04-06 16:12:59,863 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/worst5 HTTP/1.1" 200 -
+2024-04-06 16:12:59,875 - INFO - Job 113 executed successfully. Result (first 100 chars): {'Puerto Rico': 17.875, 'Mississippi': 23.83225806451613, 'Texas': 25.108695652173914, 'Oklahoma': 2
+2024-04-06 16:12:59,878 - INFO - Received GET request at /api/get_results/113
+2024-04-06 16:12:59,879 - INFO - Job 113 is done and results are (first 100 chars): {"Puerto Rico": 17.875, "Mississippi": 23.83225806451613, "Texas": 25.108695652173914, "Oklahoma": 2
+2024-04-06 16:12:59,879 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/113 HTTP/1.1" 200 -
+2024-04-06 16:12:59,883 - INFO - Received POST request at /api/worst5
+2024-04-06 16:12:59,883 - INFO - Job 114 created successfully. Data: {'question': 'Percent of adults who report consuming fruit less than one time daily'}
+2024-04-06 16:12:59,883 - INFO - Job 114 was added to the queue
+2024-04-06 16:12:59,883 - INFO - Executing job 114, with routine worst5
+2024-04-06 16:12:59,884 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "POST /api/worst5 HTTP/1.1" 200 -
+2024-04-06 16:12:59,905 - INFO - Job 114 executed successfully. Result (first 100 chars): {'Puerto Rico': 49.416666666666664, 'Louisiana': 46.168749999999996, 'Oklahoma': 45.45454545454546, 
+2024-04-06 16:12:59,907 - INFO - Received GET request at /api/get_results/114
+2024-04-06 16:12:59,907 - INFO - Job 114 is done and results are (first 100 chars): {"Puerto Rico": 49.416666666666664, "Louisiana": 46.168749999999996, "Oklahoma": 45.45454545454546, 
+2024-04-06 16:12:59,908 - INFO - 127.0.0.1 - - [06/Apr/2024 19:12:59] "GET /api/get_results/114 HTTP/1.1" 200 -
