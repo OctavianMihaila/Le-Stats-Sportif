@@ -25,14 +25,14 @@ class Job:
     def execute(self):
         # Execute the job using the assigned routine
         logging.info("Executing job %s, with routine %s", self.job_id, self.job_routine.__name__)
-        self.result = self.job_routine(self.job_id, self.request_data)
+        self.result = self.job_routine(self.request_data)
         logging.info("Job %s executed successfully. "
              "Result (first 100 chars): %s", 
              self.job_id, str(self.result)[:100])
 
         return self.result
 
-def states_mean(job_id, request_data):
+def states_mean(request_data):
     data = webserver.data_ingestor.get_data()
 
     results = calculate_arithmetic_mean(request_data, data)
@@ -41,7 +41,7 @@ def states_mean(job_id, request_data):
 
     return results
 
-def state_mean(job_id, request_data):
+def state_mean(request_data):
     results = 0
     entries = 0
     data = webserver.data_ingestor.get_data()
@@ -63,7 +63,7 @@ def state_mean(job_id, request_data):
     return formatted_results
 
 
-def best5(job_id, request_data):
+def best5(request_data):
     data = webserver.data_ingestor.get_data()
 
     results = calculate_arithmetic_mean(request_data, data)
@@ -76,7 +76,7 @@ def best5(job_id, request_data):
 
     return results
 
-def worst5(job_id, request_data):
+def worst5(request_data):
     data = webserver.data_ingestor.get_data()
 
     results = calculate_arithmetic_mean(request_data, data)
@@ -89,7 +89,7 @@ def worst5(job_id, request_data):
 
     return results
 
-def global_mean(job_id, request_data):
+def global_mean(request_data):
     result = 0
     entries = 0
     data = webserver.data_ingestor.get_data()
@@ -109,11 +109,11 @@ def global_mean(job_id, request_data):
 
     return formatted_results
 
-def diff_from_mean(job_id, request_data):
+def diff_from_mean(request_data):
     results = {}
 
-    states_results = states_mean(job_id, request_data)
-    global_mean_val = global_mean(job_id, request_data)
+    states_results = states_mean(request_data)
+    global_mean_val = global_mean(request_data)
 
     # Calculate the difference between the global mean and the mean of each state
     for state, value in states_results.items():
@@ -121,16 +121,16 @@ def diff_from_mean(job_id, request_data):
 
     return results
 
-def state_diff_from_mean(job_id, request_data):
-    global_mean_val = global_mean(job_id, request_data)
-    state_mean_val = state_mean(job_id, request_data)
+def state_diff_from_mean(request_data):
+    global_mean_val = global_mean(request_data)
+    state_mean_val = state_mean(request_data)
 
     result = global_mean_val['global_mean'] - state_mean_val[request_data['state']]
     formatted_results = {request_data['state']: result}
 
     return formatted_results
 
-def mean_by_category(job_id, request_data):
+def mean_by_category(request_data):
     results = {}
     entries = {}
     data = webserver.data_ingestor.get_data()
@@ -157,7 +157,7 @@ def mean_by_category(job_id, request_data):
 
     return results
 
-def state_mean_by_category(job_id, request_data):
+def state_mean_by_category(request_data):
     results = {}
     entries = {}
     data = webserver.data_ingestor.get_data()

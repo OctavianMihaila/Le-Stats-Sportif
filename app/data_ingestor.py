@@ -22,11 +22,11 @@ class DataIngestor:
 
     def get_data(self):
         return self.data
-    
+
     def get_sort_order(self, question: str):
         if question in self.questions_best_is_min:
             return 'asc'
         elif question in self.questions_best_is_max:
             return 'desc'
-        else:
-            return None
+        
+        return None
